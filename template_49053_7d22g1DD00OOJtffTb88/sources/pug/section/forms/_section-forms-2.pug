@@ -1,0 +1,84 @@
+
++section("section section-inset-1", "forms", "col-lg-8")
+	p.h5.fw-l With forms you can get almost any kind of information from your visitors, who will definitely appreciate this attractive element.
+
+	section.section.section-inset-1
+		h4 Login form
+		.btn-group-variant
+			a(href='#').btn.btn-info-2.btn-sm.btn-icon #[span.icon.fa-facebook] Facebook
+			a(href='#').btn.btn-info.btn-sm.btn-icon #[span.icon.fa-twitter] Twitter
+			a(href='#').btn.btn-danger.btn-sm.btn-icon #[span.icon.fa-google-plus] Google+
+		.row.offset-custom-5.justify-content-center
+			.col-xl-6.col-xl.offset-custom-3
+				p.text-uppercase.text-gray or
+				form.rd-mailform.text-left
+					.form-wrap
+						label.form-label( for="forms-sub-name" ) Username
+						input#forms-sub-name.form-input( type="text" name="name" data-constraints='@Required' )
+					.form-wrap
+						label.form-label( for="forms-sub-password" ) Password
+						input#forms-sub-password.form-input( type="password" name="password" data-constraints='@Required' )
+					.button-wrap.text-center
+						button.btn.btn-success.btn-sm.btn-min-width-lg( type="submit" ) sign in
+	section
+		h4 Contact us
+		include ../../elements/_contact-us
+
+section.section.section-sm-first.bg-dark
+	.container
+		.row.justify-content-center
+			.col-sm-10.col-md-8.col-lg-7.col-xl-6
+				h4: span(data-toggle='modal' data-target='#forms-modal-tip').text-white Newsletter form #[span.tip-mark.text-white ?]
+				p.text-white.wow-outer: span.wow.slideInLeft Keep up with our always upcoming news and updates. Enter your e-mail and subscribe to our newsletter.
+
+				// RD Mailform
+				form.rd-mailform.subscribe-form-3.offset-top-20(data-form-output="form-output-global", data-form-type='subscribe', method='post', action='bat/rd-mailform.php')
+					.form-wrap
+						label.form-label( for="forms-news-email-2" ) Your e-mail...
+						input#forms-news-email-2.form-input( type="email" name="email" data-constraints="@Email @Required" )
+					.button-wrap
+						button.btn.btn-sm.btn-secondary subscribe
+
+section.section-sm.bg-default.text-md-left
+	.container
+		.row.offset-custom-5.justify-content-center
+			.col-md-11.col-lg-9.col-xl-7
+				h4.text-spacing-50.text-center Contact Form (with reCAPTCHA)
+				form.rd-form.rd-mailform(data-form-output='form-output-global', data-form-type='contact', method='post', action='bat/rd-mailform.php')
+					.row.row-10.gutters-14
+						.col-sm-6
+							.form-wrap
+								input#contact-first-name-3.form-input(type='text' name='name' data-constraints='@Required')
+								label.form-label(for='contact-first-name-3') First Name
+
+						.col-sm-6
+							.form-wrap
+								input#contact-last-name-3.form-input(type='text' name='name' data-constraints='@Required')
+								label.form-label(for='contact-last-name-3') Last Name
+
+						.col-12
+							.form-wrap
+								input#contact-email-3.form-input(type='email' name='email' data-constraints='@Email @Required')
+								label.form-label(for='contact-email-3') E-mail
+
+						.col-12
+							.form-wrap
+								label.form-label(for='contact-message-3') Message
+								textarea#contact-message-3.form-input(name='message' data-constraints='@Required')
+
+						.col-12
+							.form-wrap.form-wrap-recaptcha
+								// Google captcha
+								.recaptcha#captcha1(data-sitekey='6LfZlSETAAAAAC5VW4R4tQP8Am_to4bM3dddxkEt')
+
+						.col-md-6
+							button.btn.btn-success.btn-sm.btn-min-width-lg-2(type='submit') Send Message
+
+
+
+
+
+
+
+
+

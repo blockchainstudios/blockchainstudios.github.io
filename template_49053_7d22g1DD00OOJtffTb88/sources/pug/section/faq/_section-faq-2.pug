@@ -1,0 +1,41 @@
+section.section.section-inset-1
+	.container
+		h2 Common questions
+		hr
+		.row.justify-content-center
+			.col-12.col-lg-8
+				p.h5.fw-l On this page we have collected the most popular questions, so that you could easily find the answer for almost any question you may have.
+				// Responsive-tabs
+				#accordion2.card-group-custom.card-group-corporate(role='tablist' aria-multiselectable='false')
+					+card({
+						show: true,
+						cardClass: 'card-corporate',
+						parentId: 'accordion2',
+						number: '1',
+						header: 'How can I change something in my order?'
+					})
+						p Nisl tincidunt eget nullam non nisi est sit amet facilisis. Lectus proin nibh nisl condimentum id.
+
+					+card({
+						cardClass: 'card-corporate',
+						parentId: 'accordion2',
+						number: '2',
+						header: 'How can I pay for my order?'
+					})
+						p Quam elementum pulvinar etiam non quam lacus suspendisse. A erat nam at lectus urna duis. Condimentum id venenatis a condimentum vitae sapien pellentesque.
+
+					+card({
+						cardClass: 'card-corporate',
+						parentId: 'accordion2',
+						number: '3',
+						header: 'Can I track my order?'
+					})
+						p Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Odio pellentesque diam volutpat commodo sed egestas.
+
+					+card({
+						cardClass: 'card-corporate',
+						parentId: 'accordion2',
+						number: '4',
+						header: 'How long will my order take to be delivered?'
+					})
+						p Nec sagittis aliquam malesuada bibendum arcu vitae. Massa tempor nec feugiat nisl pretium fusce id. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo.

@@ -1,0 +1,65 @@
+.pagination {
+
+  li {
+    display: inline-block;
+
+    .page-item {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      padding: 0;
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: 700;
+      font-family: $font-family-sec;
+      border-radius: $border-radius-large;
+      border: 2px solid;
+      color: $brand-success;
+      transition: .4s;
+      @include media-breakpoint-up(md) {
+        width: 60px;
+        height: 60px;
+        line-height: 57px;
+      }
+    }
+
+    &.active a.page-item,
+    &.active a.page-item:hover,
+    a.page-item:focus,
+    a.page-item:hover {
+      background-color: $brand-success;
+      border-color: $brand-success;
+      color: $white-clr;
+    }
+
+    &.disabled .page-item,
+    &.disabled .page-item:hover {
+      background-color: transparent;
+      color: $gray;
+      border-color: $gray;
+    }
+    & + li { margin-left: 10px; }
+  }
+
+  li:first-of-type,
+  li:last-of-type {
+    .page-item {
+      border-radius: $border-radius-large;
+      &:before {
+        display: inline-block;
+        font-family: $fa;
+        font-weight: 400;
+      }
+    }
+  }
+  li:last-of-type .page-item:before {
+    content: "\f054";
+  }
+  li:first-of-type .page-item:before {
+    content: "\f053";
+  }
+
+  &-center {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,32 @@
+section.section.section-inset-1
+  .container
+    h2 Contact us
+    hr
+    .row.justify-content-center
+      .col-12.col-lg-8
+
+        // RD Mailform
+        form.rd-mailform.text-left( data-form-output="form-output-global", data-form-type='forms', method='post', action='bat/rd-mailform.php' )
+          .row.row-10
+            .col-12.col-md-6
+              .form-wrap
+                label.form-label( for="forms-name" ) Your first name...
+                input#forms-name.form-input( type="text" name="name" data-constraints='@Required' )
+            .col-12.col-md-6
+              .form-wrap
+                label.form-label( for="forms-last-name" ) Your last name...
+                input#forms-last-name.form-input( type="text" name="last-name" data-constraints="@Required" )
+            .col-12.col-md-6
+              .form-wrap
+                label.form-label( for="forms-email" ) Your e-mail...
+                input#forms-email.form-input( type="email" name="email" data-constraints="@Email @Required" )
+            .col-12.col-md-6
+              .form-wrap
+                label.form-label( for="forms-phone" ) Your phone...
+                input#forms-phone.form-input( type="text" name="phone" data-constraints="@PhoneNumber @Required" )
+            .col-12.col-md-12
+              .form-wrap
+                label.form-label( for="forms-message" ) Message:
+                textarea#forms-message.form-input( name="message" data-constraints="@Required" )
+            .col-12.text-center
+              button.btn.btn-success.btn-sm( type="submit" ) Send Message

@@ -1,0 +1,132 @@
+// RD Navbar
+.rd-navbar-wrap(class=rd_navbar_class_ajuster)
+
+  nav&attributes(rd_navbar_data_ajuster).rd-navbar(class= (navbarFixed ? navbarFixed : ''))
+    //(data-layout='rd-navbar-fixed',data-sm-layout='rd-navbar-fullwidth', data-lg-layout=rd_navbar_data_ajuster )
+    .rd-navbar-top-panel.bg-accent
+      .rd-navbar-inner
+        button.rd-navbar-collapse-toggle(data-rd-navbar-toggle=".list-inline" type="submit")
+          span
+        a.fa-envelope(href="mailto:#") info@demolink.org
+        a.fa-mobile-phone.preffix-2(href="callto:#") 1-800-1234-567
+        ul.list-inline.pull-right
+          li: a.fa-facebook(href="#")
+          li: a.fa-twitter(href="#")
+          li: a.fa-pinterest-p(href="#")
+          li: a.fa-vimeo(href="#")
+          li: a.fa-google-plus(href="#")
+          li: a.fa-rss(href="#")
+          li.text-left: a.fa-envelope(href="mailto:#") info@demolink.org
+          li.text-left: a.fa-mobile-phone(href="callto:#") 1-800-1234-567
+
+    .rd-navbar-inner
+      // RD Navbar Panel
+      .rd-navbar-panel
+        // RD Navbar Toggle
+        button.rd-navbar-toggle(data-rd-navbar-toggle='.rd-navbar-nav-wrap' type="submit")
+          span
+        // RD Navbar Brand
+        .rd-navbar-brand
+          a.brand-name(href='index.html')
+            img(src="images/logo-default.png" alt="")
+
+
+
+      .rd-navbar-nav-wrap
+        // RD Navbar Search
+        .rd-navbar-search
+          form.rd-search.rd-navbar-search-form(action='search-results.html' data-search-live='rd-search-results-live' method='GET')
+            label.rd-navbar-search-form-input
+              input(type='text', name='s', placeholder='Search..', autocomplete='off')
+            button.rd-navbar-search-form-submit.fa-shopping-cart(type='submit')
+          #rd-search-results-live.rd-search-results-live.rd-navbar-live-search-results
+          button.rd-navbar-search-toggle(data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-live-search-results" type="submit")
+
+        a.fa-shopping-cart(href='shop-cart.html'): span 2
+
+        // RD Navbar Nav
+        ul.rd-navbar-nav
+          li(class=(activeIndex == '1' ? 'active' : ''))
+            a(href='./') Home
+          li(class=(activeIndex == '2' ? 'active' : ''))
+            a(href='catalog.html') Catalog
+            ul.rd-navbar-dropdown
+              li: a(href="movie-details.html") Movie Details
+          li(class=(activeIndex == '3' ? 'active' : ''))
+            a(href='#') News
+            ul.rd-navbar-dropdown
+              li: a(href="blog_default.html") Default Blog
+              li: a(href="blog_columns_2.html") 2 Columns Blog
+              li: a(href="blog_columns_3.html") 3 Columns Blog
+              li: a(href="blog_archive.html") Blog Archive
+              li: a(href="timeline.html") Timeline
+              li: a(href="blog_post.html") Post page
+              li: a(href="left_sidebar.html") Blog with Left Sidebar
+              li: a(href="right_sidebar.html") Blog with Right Sidebar
+              li: a(href="no_sidebar.html") Blog without Sidebar
+          li(class=(activeIndex == '4' ? 'active' : ''))
+            a(href='#') Pages
+            // RD Navbar Megamenu
+            ul.rd-navbar-megamenu
+              li
+                p Elements
+                ul
+                  li
+                    a(href='tabs-accordion.html') Tabs & Accordions
+                  li
+                    a(href='typography.html') Typography
+                  li
+                    a(href='forms.html') Forms
+                  li
+                    a(href='buttons.html') Buttons
+                  li
+                    a(href='grid.html') Grid
+                  li
+                    a(href='icons.html') Icons
+                  li
+                    a(href='tables.html') Tables
+                  li
+                    a(href='progress-bars.html') Progress bars
+              li
+                p Pages 1
+                ul
+                  li: a(href="about.html") About Us
+                  li: a(href="our-team.html") Our Team
+                  li: a(href="team-member.html") Team member profile
+                  li: a(href="contact_us_2.html") Contact Us 2
+                  li: a(href="pricing.html") Pricing
+                  li: a(href="services.html") Services page
+                  li: a(href="clients.html") Client Page
+                  li: a(href="faq.html") FAQ Page
+              li
+                p Pages 2
+                ul
+                  li: a(href="404.html") 404
+                  li: a(href="coming-soon.html") Coming soon
+                  li: a(href="login.html") Login page
+                  li: a(href="maintenance.html") Maintenance page
+                  li: a(href="register.html") Register page
+                  li: a(href="search-results.html") Search results page
+                  li: a(href="terms.html") Terms of Use
+
+              li
+                p Gallery
+                ul
+                  li: a(href="grid-gallery.html") Grid Gallery
+                  li: a(href="no-padding-grid.html") Grid Without Padding Gallery
+                  li: a(href="masonry-grid.html") Masonry Gallery
+                  li: a(href="cobbles-grid.html") Cobbles Gallery
+
+
+          li(class=(activeIndex == '5' ? 'active' : ''))
+            a(href='#') Shop
+            ul.rd-navbar-dropdown
+              li: a(href="shop-catalog.html") Product catalog
+              li: a(href="shop-product.html") Single Movie
+              li: a(href="shop-cart.html") Shopping cart
+              li: a(href="shop-checkout.html") Checkout
+
+          li(class=(activeIndex == '6' ? 'active' : ''))
+            a(href='contact_us.html') Contact Us
+
+

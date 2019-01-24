@@ -1,0 +1,40 @@
+.form-input:focus {
+  box-shadow: none;
+}
+
+
+.radio {
+  margin-bottom: 0;
+
+  label {
+    padding-left: 30px;
+  }
+  input { opacity: 0; }
+
+  input[type="radio"] {
+    margin-left: -30px;
+    margin-top: 8px;
+  }
+  input[type="radio"]:checked + .radio-field {
+    background-color: $gray;
+  }
+}
+
+.mfCheckbox {
+  margin-top: 20px;
+  .mfInput,  span {
+    display: inline-block;
+  }
+  .mfInput {
+    color: $gray; }
+  span {
+    padding: 0 10px;
+    vertical-align: middle;
+  }
+  .mfCheckbox__input-outer::after {
+    background-color: $gray;
+  }
+  .mfCheckbox__input-outer {
+    border-radius: 0;
+  }
+}

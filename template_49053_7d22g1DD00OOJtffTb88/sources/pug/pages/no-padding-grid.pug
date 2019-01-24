@@ -1,0 +1,109 @@
+extends  ../_skeleton
+block variables
+  - var activeIndex = 4
+block title
+  title Grid Without Padding Gallery
+block page
+  // Page Header
+  -var header_class = "bg-blog"
+  -var header_h1 = "<span class='font-weight-bold'>Grid Gallery</span>"
+  -var header_small = "Best Movie Moments"
+  -var page_active = "Grid Without Padding Gallery"
+  -var page_parent = "Gallery"
+  include ../elements/_header-transparent
+  // Page Content
+  main.page-content
+    include ../section/about/_section-breadcrumb
+    section.section.section-inset-1
+      .container.isotope-wrap
+        h2 Grid Gallery without padding
+        hr
+        .btn-group-isotope.isotope-filters
+          button(data-isotope-filter="*" data-isotope-group="gallery").btn.btn-success-mod-1.btn-sm.active All
+          button(data-isotope-filter="type-1" data-isotope-group="gallery").btn.btn-success-mod-1.btn-sm  Action
+          button(data-isotope-filter="type-2" data-isotope-group="gallery").btn.btn-success-mod-1.btn-sm  Drama
+          button(data-isotope-filter="type-3" data-isotope-group="gallery").btn.btn-success-mod-1.btn-sm  Thriller
+        .isotope.isotope-grid.offset-custom-1.row.row-no-gutter(data-isotope-layout="masonry" data-isotope-group="gallery" data-lightgallery="group")
+
+          .thumbnail-gallery.isotope-item.col-12.col-md-6.col-lg-4(data-filter="type-1")
+            a(href="images/gallery-1_original.jpg" data-lightgallery="item")
+              img(src="images/gallery-19.jpg" alt="" width='390' height='230')
+              .caption
+                .caption-wrapper
+                  span.icon.icon-md.icon-white.fa-search-plus
+                  h4.text-white Movie Trailers
+                  p.text-white Our website provides a wide range of movies and TV shows in various genres.
+
+          .thumbnail-gallery.isotope-item.col-12.col-md-6.col-lg-4(data-filter="type-1")
+            a(href="images/gallery-2_original.jpg" data-lightgallery="item")
+              img(src="images/gallery-26.jpg" alt="")
+              .caption
+                .caption-wrapper
+                  span.icon.icon-md.icon-white.fa-search-plus
+                  h4.text-white Affordable prices
+                  p.text-white Our website provides a wide range of movies and TV shows in various genres.
+
+          .thumbnail-gallery.isotope-item.col-12.col-md-6.col-lg-4(data-filter="type-1")
+            a(href="images/gallery-5_original.jpg" data-lightgallery="item")
+              img(src="images/gallery-27.jpg" alt="")
+              .caption
+                .caption-wrapper
+                  span.icon.icon-md.icon-white.fa-search-plus
+                  h4.text-white Upcoming Movies
+                  p.text-white Our website provides a wide range of movies and TV shows in various genres.
+
+          .thumbnail-gallery.isotope-item.col-12.col-md-6.col-lg-4(data-filter="type-2")
+            a(href="images/gallery-4_original.jpg" data-lightgallery="item")
+              img(src="images/gallery-28.jpg" alt="")
+              .caption
+                .caption-wrapper
+                  span.icon.icon-md.icon-white.fa-search-plus
+                  h4.text-white TV Shows
+                  p.text-white Our website provides a wide range of movies and TV shows in various genres.
+          .thumbnail-gallery.isotope-item.col-12.col-md-6.col-lg-4(data-filter="type-2")
+            a(href="images/gallery-10_original.jpg" data-lightgallery="item")
+              img(src="images/gallery-21.jpg" alt="")
+              .caption
+                .caption-wrapper
+                  span.icon.icon-md.icon-white.fa-search-plus
+                  h4.text-white Sci-Fi & Fantasy
+                  p.text-white Our website provides a wide range of movies and TV shows in various genres.
+
+
+          .thumbnail-gallery.isotope-item.col-12.col-md-6.col-lg-4(data-filter="type-2")
+            a(href="images/gallery-6_original.jpg" data-lightgallery="item")
+              img(src="images/gallery-24.jpg" alt="")
+              .caption
+                .caption-wrapper
+                  span.icon.icon-md.icon-white.fa-search-plus
+                  h4.text-white Classic Movies
+                  p.text-white Our website provides a wide range of movies and TV shows in various genres.
+
+          .thumbnail-gallery.isotope-item.col-12.col-md-6.col-lg-4(data-filter="type-2")
+            a(href="images/gallery-7_original.jpg" data-lightgallery="item")
+              img(src="images/gallery-37.jpg" alt="")
+              .caption
+                .caption-wrapper
+                  span.icon.icon-md.icon-white.fa-search-plus
+                  h4.text-white Interviews
+                  p.text-white Our website provides a wide range of movies and TV shows in various genres.
+
+          .thumbnail-gallery.isotope-item.col-12.col-md-6.col-lg-4(data-filter="type-3")
+            a(href="images/gallery-8_original.jpg" data-lightgallery="item")
+              img(src="images/gallery-35.jpg" alt="")
+              .caption
+                .caption-wrapper
+                  span.icon.icon-md.icon-white.fa-search-plus
+                  h4.text-white Movie Trailers
+                  p.text-white Our website provides a wide range of movies and TV shows in various genres.
+
+          .thumbnail-gallery.isotope-item.col-12.col-md-6.col-lg-4(data-filter="type-3")
+            a(href="images/gallery-23_original.jpg" data-lightgallery="item")
+              img(src="images/gallery-36.jpg" alt="")
+              .caption
+                .caption-wrapper
+                  span.icon.icon-md.icon-white.fa-search-plus
+                  h4.text-white Interviews
+                  p.text-white Our website provides a wide range of movies and TV shows in various genres.
+  // Page Footer
+  include ../elements/_footer-light-center

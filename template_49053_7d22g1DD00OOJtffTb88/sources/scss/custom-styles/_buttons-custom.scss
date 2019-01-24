@@ -1,0 +1,275 @@
+//
+// Custom Buttons Styles
+// --------------------------------------------------
+
+// Base styles
+// --------------------------------------------------
+
+.btn {
+	text-transform: uppercase;
+	font-family: $font-family-sec;
+	letter-spacing: 0;
+	border-width: 2px;
+	transition: .4s;
+	white-space: normal;
+	cursor: pointer;
+
+	@include media-breakpoint-up(xl) {
+		white-space: nowrap;
+	}
+
+	&,
+	&:hover,
+	&:active,
+	&.active,
+	&:focus,
+	&.focus {
+		&,
+		&:not([disabled]):not(.disabled) {
+			outline: none;
+			text-decoration: none;
+			box-shadow: $input-btn-focus-box-shadow;
+		}
+	}
+}
+
+.btn-icon {
+	text-transform: none;
+	.fa-facebook,
+	.fa-twitter,
+	.fa-google-plus,
+	.fa-pinterest-p,
+	.fa-vimeo,
+	.fa-google,
+	.fa-rss {
+		&:hover {
+			color: inherit;
+		}
+	}
+}
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-primary {
+	background-color: transparent;
+	border-color: $primary;
+
+	&:hover, &:active, &:focus {
+		color: $white;
+		background-color: $primary;
+		border-color: $primary;
+	}
+}
+
+.btn-secondary {
+	background-color: $primary;
+	border-color: $primary;
+
+	&:hover, &:active, &:focus {
+		color: $white;
+		background-color: transparent;
+		border-color: $primary;
+	}
+}
+
+.btn-third {
+	background-color: $primary;
+	border-color: $primary;
+	color: $white;
+	&:hover, &:active, &:focus {
+		color: $white;
+		background-color: $secondary;
+		border-color: $secondary;
+	}
+}
+
+.btn-fourth {
+	background-color: $secondary;
+	border-color: $secondary;
+	color: $white;
+	&:hover, &:active, &:focus {
+		color: $primary!important;
+		background-color: $white;
+		border-color: $secondary;
+	}
+}
+
+
+.btn-white {
+	background-color: transparent;
+	color: $white-clr;
+	border-color: $white-clr;
+
+	&:hover {
+		color: $primary;
+		background-color: $secondary;
+		border-color: $white-clr;
+	}
+}
+
+// Success appears as green
+.btn-success {
+	color: $white-clr;
+	background-color: $brand-success;
+	border-color: $brand-success;
+
+	&:focus {
+		background-color: $secondary;
+		border-color: $secondary;
+	}
+
+	&:hover {
+		background-color: $secondary;
+		border-color: $secondary;
+	}
+
+	&-mod-1 {
+		color: $primary;
+		background-color: transparent;
+		border-color: $primary;
+
+		&:focus {
+			background-color: transparent;
+			border-color: $primary;
+			color: $primary;
+		}
+
+		&:hover {
+			background-color: $primary;
+			border-color: $primary;
+			color: $white-clr;
+		}
+	}
+}
+
+// Info appears as blue-green
+.btn-info {
+	.icon { color: $white-clr; }
+
+	&:focus {
+		color: $white-clr;
+		background-color: $brand-info;
+		border-color: $brand-info;
+	}
+
+	&:hover {
+		background-color: $primary;
+		border-color: $primary;
+	}
+}
+
+.btn-info-2 {
+	background-color: $brand-info-2;
+	color: $white-clr;
+
+	.icon { color: $white-clr; }
+
+	&:focus {
+		color: $white-clr;
+		background-color: $brand-info-2;
+		border-color: $brand-info-2;
+	}
+
+	&:hover {
+		color: $white-clr;
+		background-color: $primary;
+		border-color: $primary;
+	}
+}
+
+// Warning appears as orange
+.btn-warning {
+}
+
+// Danger and error appear as red
+.btn-danger {
+	.icon { color: $white-clr; }
+
+	&:focus {
+		color: $white-clr;
+		background-color: $brand-danger;
+		border-color: $brand-danger;
+	}
+
+	&:hover {
+		background-color: $primary;
+		border-color: $primary;
+	}
+}
+
+// Button Sizes
+// --------------------------------------------------
+
+.btn-xs {
+	font-size: $font-size-base;
+	padding: $padding-xs-vertical $padding-xs-horizontal;
+}
+
+.btn-sm {
+	padding: 15px 40px;
+	font-size: $btn-font-size;
+	border-radius: $border-radius-large;
+}
+
+.btn-sm-2 {
+	padding: 15px 40px;
+	font-size: $btn-font-size;
+	border-radius: 0 6px 6px 0;
+}
+
+.btn-md {
+	font-size: 20px;
+	line-height: 1.6;
+	padding: $padding-small-vertical $padding-small-horizontal;
+	border-radius: $border-radius-large;
+}
+
+.btn-lg {
+	font-size: 22px;
+	line-height: 1.8;
+	padding: $padding-small-vertical $padding-small-horizontal;
+}
+
+.btn-min-width {
+	min-width: 240px;
+}
+
+.btn-min-width-xs {
+	min-width: 190px;
+}
+
+.btn-min-width-sm {
+	min-width: 200px;
+}
+
+.btn-min-width-lg {
+	@include media-breakpoint-up(md) {
+		min-width: 370px;
+	}
+}
+
+.btn-min-width-lg-2 {
+	@include media-breakpoint-up(lg) {
+		min-width: 334px;
+	}
+}
+
+// Button Shapes
+// --------------------------------------------------
+
+.btn-shape-default {
+	border-radius: $border-radius-large;
+}
+
+.btn-shape-round {
+	border-radius: $border-radius-xl;
+}
+
+.btn-shape-square {
+	border-radius: 0;
+}
+
+.btn-shadow {
+	box-shadow: $box-shadow-key-small;
+}

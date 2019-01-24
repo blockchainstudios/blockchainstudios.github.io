@@ -1,0 +1,21 @@
++section("section section-inset-1", "Watch movies online")
+
+	.container
+		.row.justify-content-center
+			.col-12.col-xl-8
+				form.rd-mailform.subscribe-form.subscribe-form-2(data-result-class='rd-mailform-validate', data-form-type='subscribe', method='post', action='bat/rd-mailform.php')
+					.form-wrap.form-wrap-2
+						label.form-label( for="forms-news-email" ) Find Movies...
+						input#forms-news-email.form-input.form-input-2( type="text" name="text" data-constraints="@Required" )
+						label.form-label( for="involve-form-movie" )
+						select#involve-form-movie.form-input.form-select( name='Movies', data-constraints='@Required', data-placeholder='Select Your Movie', data-container-class='select-gray' data-dropdown-class='select-gray' )
+							option( label='Movies' )
+							option( selected ) All Categories
+							option Drama
+							option Horror
+							option Action
+							option Comedy
+					.button-wrap
+						button.btn.btn-sm.btn-third Search
+
+

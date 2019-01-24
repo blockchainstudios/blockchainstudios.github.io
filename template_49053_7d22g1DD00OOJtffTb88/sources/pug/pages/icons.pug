@@ -1,0 +1,29 @@
+extends  ../_skeleton
+
+block variables
+  - var activeIndex = 4
+
+block title
+  title Icons
+
+block page
+  -var header_class = "bg-blog"
+  -var header_h1 = "<span class='font-weight-bold'>icons</span>"
+  -var header_small = "interface elements"
+  -var header_big = ""
+  -var page_active = "Pages"
+  -var page_parent = "Elements"
+  // Page Header
+  include ../elements/_header-transparent
+
+
+  // Page Content
+  main.page-content
+    include ../section/about/_section-breadcrumb
+    include ../section/icons/_font-awesome
+
+  // Page Footer
+  include ../elements/_footer-light-center
+
+
+

@@ -1,0 +1,27 @@
+extends  ../_skeleton
+include ../mixin/_mixin-pagination
+include ../mixin/_mixin-section
+include ../mixin/_mixin-sidebar-module
+include ../mixin/_mixin-media
+block variables
+  - var activeIndex = 2
+block title
+  title Movie details
+block page
+  // Page Header
+  -var header_class = "bg-blog"
+  -var header_h1 = "<span class='font-weight-bold'>Movie details</span>"
+  -var header_small = "Facts & info"
+  -var header_big = ""
+  -var page_active = "Movie details"
+  -var page_parent = "Catalog"
+  include ../elements/_header-transparent
+  // Page Content
+  main.page-content
+    include ../section/about/_section-breadcrumb
+    include ../section/blog/_section-blog-12
+
+  // Page Footer
+  include ../elements/_footer-light-center
+  // Rd Mailform result field
+  .rd-mailform-validate

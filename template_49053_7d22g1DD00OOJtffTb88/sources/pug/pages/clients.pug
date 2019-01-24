@@ -1,0 +1,23 @@
+extends  ../_skeleton
+block variables
+  - var activeIndex = 4
+block title
+  title Client page
+block page
+  // Page Header
+  -var header_class = "bg-blog"
+  -var header_h1 = "<span class='font-weight-bold'>Client Page</span>"
+  -var header_small = "people we work with"
+  -var page_active = "Partner Page"
+  -var sectionHeading = "all our clients"
+  -var page_parent = "Pages"
+  include ../elements/_header-transparent
+  // Page Content
+  main.page-content
+    include ../section/about/_section-breadcrumb
+    include ../section/clients/_section-clients-2
+    include ../section/clients/_section-clients-3
+    include ../section/clients/_section-clients-4
+    include ../section/index/_section-clients
+  // Page Footer
+  include ../elements/_footer-light-center

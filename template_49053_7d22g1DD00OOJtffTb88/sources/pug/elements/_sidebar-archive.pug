@@ -1,0 +1,95 @@
+.col-12.col-lg-4.blog-sidebar.offset-top-40-lg-0
+  +sidebar-module('sidebar-module-inset-1', 'archive')
+    .row.text-md-left
+      .col-md-6
+        ul.marked-list.marked-list-mod-1
+          li: a(href="#") Jun 2016
+          li: a(href="#") Aug 2016
+          li: a(href="#") Oct 2016
+          li: a(href="#") Dec 2016
+          li: a(href="#") Feb 2017
+      .col-md-6
+        ul.marked-list.marked-list-mod-1
+          li: a(href="#") Jul 2017
+          li: a(href="#") Sep 2017
+          li: a(href="#") Nov 2018
+          li: a(href="#") Jan 2018
+          li: a(href="#") Mar 2018
+  +sidebar-module('sidebar-module-inset-1', 'latest blog posts')
+    ul.list-unstyled.text-lg-left
+      li
+        h6: a.text-success-custom(href="blog_post.html") "Better Call Saul" Writer Offers Advice
+        .blog-post-time
+          time(datetime="2018-12-28") December 28, 2018
+      li
+        h6: a.text-success-custom(href="blog_post.html") "Single Parents" Lands Full-Season Order From ABC
+        .blog-post-time
+          time(datetime="2018-12-28") December 28, 2018
+      li
+        h6: a.text-success-custom(href="blog_post.html") "Animals" Canceled After Three Seasons at HBO
+        .blog-post-time
+          time(datetime="2018-12-28") December 28, 2018
+    a.btn.btn-success.btn-sm.sidebar-btn(href="#") view all blog posts
+  +sidebar-module('','Gallery')
+    .row.row-no-gutter.gallery(data-lightgallery="group")
+      .col-md-6
+        .img-thumbnail
+          a.thumb(href="images/gallery-13_original.jpg" data-lightgallery="item")
+            img(src="images/gallery-13.jpg" alt="")
+            span.thumb-overlay
+            span.thumb-overlay
+      .col-md-6
+        .img-thumbnail
+          a.thumb(href="images/gallery-6_original.jpg" data-lightgallery="item")
+            img(src="images/gallery-14.jpg" alt="")
+            span.thumb-overlay
+      .col-md-6
+        .img-thumbnail
+          a.thumb(href="images/gallery-15_original.jpg" data-lightgallery="item")
+            img(src="images/gallery-15.jpg" alt="")
+            span.thumb-overlay
+      .col-md-6
+        .img-thumbnail
+          a.thumb(href="images/gallery-16_original.jpg" data-lightgallery="item")
+            img(src="images/gallery-16.jpg" alt="")
+            span.thumb-overlay
+      .col-md-6
+        .img-thumbnail
+          a.thumb(href="images/gallery-7_original.jpg" data-lightgallery="item")
+            img(src="images/gallery-17.jpg" alt="")
+            span.thumb-overlay
+      .col-md-6
+        .img-thumbnail
+          a.thumb(href="images/gallery-2_original.jpg" data-lightgallery="item")
+            img(src="images/gallery-18.jpg" alt="")
+            span.thumb-overlay
+  +sidebar-module('sidebar-module-inset-1','Clients')
+    .row
+      .col-6.col-md-4.col-lg-6
+        .img-thumbnail.img-thumbnail-mod-1
+          a(href='#')
+            img(src='images/partner-1.png' alt="")
+      .col-6.col-md-4.col-lg-6
+        .img-thumbnail.img-thumbnail-mod-1
+          a(href='#')
+            img(src='images/partner-2.png' alt="")
+      .col-6.col-md-4.col-lg-6
+        .img-thumbnail.img-thumbnail-mod-1
+          a(href='#')
+            img(src='images/partner-3.png' alt="")
+      .col-6.col-md-4.col-lg-6
+        .img-thumbnail.img-thumbnail-mod-1
+          a(href='#')
+            img(src='images/partner-4.png' alt="")
+      .col-6.col-md-4.col-lg-6
+        .img-thumbnail.img-thumbnail-mod-1
+          a(href='#')
+            img(src='images/partner-5.png' alt="")
+      .col-6.col-md-4.col-lg-6
+        .img-thumbnail.img-thumbnail-mod-1
+          a(href='#')
+            img(src='images/partner-6.png' alt="")
+  +sidebar-module-2('sidebar-module-inset-2','')
+    a.banner(href="#")
+      img(src="images/banner-2.jpg" alt="")
+      span.h4 banner 350x500

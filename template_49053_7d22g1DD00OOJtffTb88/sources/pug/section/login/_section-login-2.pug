@@ -1,0 +1,22 @@
+section.section.section-inset-1
+  .container
+    h2 sign in
+    hr
+    .row.justify-content-center
+      .col-12.col-xl-8
+        .btn-group-variant
+          a(href='#').btn.btn-info-2.btn-sm.btn-icon #[span.icon.fa-facebook] Facebook
+          a(href='#').btn.btn-info.btn-sm.btn-icon #[span.icon.fa-twitter] Twitter
+          a(href='#').btn.btn-danger.btn-sm.btn-icon #[span.icon.fa-google-plus] Google+
+        .row.justify-content-center.offset-custom-5
+          .col-xl-6.col-xl.offset-custom-3
+            p.text-uppercase.text-gray or
+            form.rd-mailform.text-left
+              .form-wrap
+                label.form-label( for="forms-sub-name" ) Username
+                input#forms-sub-name.form-input( type="text" name="name" data-constraints='@Required' )
+              .form-wrap
+                label.form-label( for="forms-sub-password" ) Your first name...
+                input#forms-sub-password.form-input( type="password" name="password" data-constraints='@Required' )
+              .button-wrap.text-center
+                button.btn.btn-success.btn-sm.btn-min-width-lg( type="submit" ) sign in

@@ -1,0 +1,35 @@
+extends  ../_skeleton
+block variables
+  - var activeIndex = 4
+block title
+  title Cobbles Gallery
+block page
+  // Page Header
+  -var header_class = "bg-blog"
+  -var header_h1 = "<span class='font-weight-bold'>Cobbles Gallery</span>"
+  -var header_small = "Best Movie Moments"
+  -var page_active = "Cobbles Gallery"
+  -var page_parent = "Gallery"
+  include ../elements/_header-transparent
+  // Page Content
+  main.page-content
+    include ../section/about/_section-breadcrumb
+    include ../section/gallery/_section-cobbles-grid
+  // Page Footer
+  footer.page-foot.bg-gray-900
+    section.footer-content.footer-content-2
+      .container
+        .rd-navbar-brand-2
+          a.brand-name(href='index.html')
+            img(src="images/logo-default.png" alt="")
+        ul.list-inline
+          li: a.fa-facebook(href="#")
+          li: a.fa-twitter(href="#")
+          li: a.fa-pinterest-p(href="#")
+          li: a.fa-vimeo(href="#")
+          li: a.fa-google(href="#")
+          li: a.fa-rss(href='#')
+
+    section.footer-copyright-1.copyright
+      .container
+        +rights

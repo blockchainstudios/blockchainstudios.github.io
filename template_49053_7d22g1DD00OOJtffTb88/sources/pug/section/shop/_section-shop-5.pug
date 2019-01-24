@@ -1,0 +1,79 @@
+section.section.section-inset-1
+  .container
+    .row.justify-content-center
+      .col-12.col-xl-8
+        .row.row-45.product-item
+          .col-12.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-0.text-center.text-md-left
+            a(href="images/product-7.jpg" data-lightgallery="item")
+              img(src='images/product-7.jpg', alt='')
+          .col-12.col-lg-6.text-md-left
+            h4 Ant-Man and the Wasp 2018, USA
+            .review
+              span.icon.fa-star.icon-waring-2
+              span.icon.fa-star.icon-waring-2
+              span.icon.fa-star.icon-waring-2
+              span.icon.fa-star.icon-waring-2
+              span.icon.fa-star.icon-waring-2
+              span.text-gray 2 customer reviews
+            .about-container
+              p.text-gray Producer:&nbsp;
+                span.text-black Mervin Townsend
+              p.text-gray Actors:&nbsp;
+                span.text-black David Oliver, Helen Price, Ethan Booth
+              p Id aliquet lectus proin nibh nisl. Ultrices dui sapien eget mi proin sed libero enim. Justo laoreet sit amet cursus sit amet. Est ultricies integer quis auctor elit. Erat velit scelerisque in dictum.
+              ul.info-box
+                li HD
+                li 16+
+
+            .price-container
+              span.h4 $29.00
+            button.btn.btn-success.btn-sm(type="submit")
+              span.icon.icon-xs.fa-shopping-cart
+              | &nbsp; add to cart
+            .blog-post.offset-custom-5
+              .badge
+                span Share:
+                ul.list-inline
+                  li: a.fa-facebook(href="#")
+                  li: a.fa-twitter(href="#")
+                  li: a.fa-pinterest-p(href="#")
+                  li: a.fa-vimeo(href="#")
+                  li: a.fa-google(href="#")
+                  li: a.fa-rss(href='#')
+
+        .row.offset-custom-4
+          .col-12
+            .responsive-tabs-shop.horizontal-tabs.offset-custom-5
+              #tabs-3.tabs-custom.tabs-horizontal.tabs-corporate.tabs-shop
+                // Nav tabs
+                ul.nav.nav-tabs
+                  li.nav-item(role='presentation'): a.nav-link.active.text-capitalize(href='#tabs-3-1' data-toggle='tab') Description
+                  li.nav-item(role='presentation'): a.nav-link.text-capitalize(href='#tabs-3-3' data-toggle='tab') Reviews (2)
+
+                // Tab panes
+                .tab-content
+                  div#tabs-3-1.tab-pane.fade.show.active
+                    p Faucibus et molestie ac feugiat sed lectus. Ut faucibus pulvinar elementum integer enim neque volutpat ac. Faucibus in ornare quam viverra orci sagittis eu volutpat odio. Placerat orci nulla pellentesque dignissim enim sit amet. Nec feugiat in fermentum posuere urna. Mi proin sed libero enim sed faucibus turpis in. Accumsan tortor posuere ac ut consequat semper viverra nam libero. Facilisi etiam dignissim diam quis enim. Viverra accumsan in nisl nisi scelerisque eu. Ultricies integer quis auctor elit.
+
+
+                  div#tabs-3-3.tab-pane.fade
+                    include ../../elements/_comments
+                    div.offset-custom-7
+                      h4.text-center Leave your comment
+                      // RD Mailform
+                      form.rd-mailform.text-left( data-form-output="form-output-global", data-form-type='forms', method='post', action='bat/rd-mailform.php' )
+                        .row.row-10
+                          .col-12.col-md-6
+                            .form-wrap
+                              label.form-label( for="forms-name" ) Your first name...
+                              input#forms-name.form-input( type="text" name="name" data-constraints='@Required' )
+                          .col-12.col-md-6
+                            .form-wrap
+                              label.form-label( for="forms-email" ) Your e-mail...
+                              input#forms-email.form-input( type="email" name="email" data-constraints="@Email @Required" )
+                          .col-12.col-md-12
+                            .form-wrap
+                              label.form-label( for="forms-message" ) Message:
+                              textarea#forms-message.form-input( name="message" data-constraints="@Required" )
+                          .col-12.text-center
+                            button.btn.btn-success.btn-sm( type="submit" ) Submit

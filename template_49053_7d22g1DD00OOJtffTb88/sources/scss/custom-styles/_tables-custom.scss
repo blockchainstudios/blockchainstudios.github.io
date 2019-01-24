@@ -1,0 +1,129 @@
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+.table {
+  margin-bottom: 0;
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: $table-cell-padding 25px;
+        line-height: $line-height-base;
+        border: none;
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+    }
+  }
+  thead {
+    tr {
+      th {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-family: $font-family-sec;
+        empty-cells: hide;
+      }
+    }
+  }
+}
+
+.table-responsive {
+  border: 1px solid $gray-1;
+}
+
+.table-striped {
+
+  border-radius: $border-radius-large $border-radius-large 0;
+
+  > tbody > tr:nth-of-type(even) {
+    background-color: $table-bg-accent;
+  }
+
+  > tbody > tr:nth-of-type(odd) {
+    background-color: transparent;
+  }
+  tr {
+    td {
+      border-top: none;
+    }
+    td:first-of-type {
+      text-align: left;
+    }
+  }
+
+  thead {
+    tr {
+      //background-color: $table-bg-accent;
+      box-shadow: 0 1px 3px rgba($gray, .8);
+      &.bg-accent { background-color: $secondary; }
+
+      th{}
+      th:first-of-type { border-radius: $border-radius-large 0 0 0; }
+      th:last-of-type { border-radius: 0 $border-radius-large 0 0; }
+    }
+  }
+}
+
+.table-striped-mod-1 {
+  @extend .table-striped;
+  tbody {
+    td:first-of-type {
+      width: 70%;
+    }
+  }
+}
+
+// Bordered version
+//
+// Add borders all around the table and between all the columns.
+
+.table-bordered {
+  border: none;
+
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border-bottom: 1px solid $table-border-color;
+      }
+    }
+  }
+  > thead > tr {
+    > th,
+    > td {
+      //border-bottom-width: 2px;
+    }
+  }
+}
+
+
+// Hover effect
+//
+// Placed here since it has to come after the potential zebra striping
+
+.table-hover {
+  thead {
+    tr {
+      box-shadow: 0 1px 3px rgba($gray, .8);
+    }
+  }
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border-bottom: 1px solid rgba($table-border-color, .4);
+      }
+    }
+  }
+  > tbody > tr:hover {
+    background-color: $table-bg-hover;
+  }
+
+}

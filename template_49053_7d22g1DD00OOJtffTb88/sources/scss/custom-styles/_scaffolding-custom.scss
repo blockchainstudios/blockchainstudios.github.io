@@ -1,0 +1,162 @@
+//
+// Scaffolding-custom
+// --------------------------------------------------
+
+a:hover, a:focus {
+  color: $primary;
+  text-decoration: none;
+}
+// Image thumbnails
+//
+// Heads up! This is mixin-ed into thumbnails.less for `.thumbnail`.
+.img-thumbnail {
+  padding: 0;
+  line-height: $line-height-base;
+  background-color: transparent;
+  border: none;
+  border-radius: $thumbnail-border-radius;
+  @include transition(all .2s ease-in-out);
+
+  // Keep them at most 100% wide
+  @include img-responsive(inline-block);
+
+  .thumb-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    &:before{
+      content: "\f00e";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include transition(.4s);
+      display: inline-block;
+      font-family: $fa;
+      font-size: 36px;
+      color: $white-clr;
+      opacity: 0;
+    }
+  }
+
+  &:hover{
+   .thumb-overlay:before {
+     opacity: 1;
+   }
+  }
+
+  &-mod-1 {
+    opacity: 0.6;
+    transition: .4s;
+    &:hover{
+     opacity: 1;
+    }
+  }
+}
+
+/*  page-foot  */
+
+.page-foot {
+  &.bg-light {
+    .text-logo {
+      text {
+        fill: $gray;
+        stroke: transparent;
+      }
+    }
+    .logo {
+      stroke: $gray;
+      fill: transparent;
+    }
+  }
+
+  &.bg-accent {
+    p,
+    dt,dd,
+    time { color: $gray; }
+    .count { color: $white-clr; }
+  }
+
+  .rd-mailform { margin-top: 10px; }
+
+  .list-inline-mod-1 {
+    width: 100%;
+    text-align: right;
+    @include media-breakpoint-up(xl) {
+      width: 80%;
+    }
+  }
+
+  .copyright {
+    color: $gray;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: $gray;
+      &:hover {
+        color: $brand-success;
+      }
+    }
+  }
+
+  .rd-navbar-brand + p {
+    margin-top: 25px;
+  }
+  
+  h4 + * {
+    margin-top: 25px;
+  }
+
+  * + .blog-post { margin-top: 30px; }
+
+  .rd-mailform {
+    text-align: left;
+
+    input { background-color: $white-clr; }
+  }
+  .count {
+    display: inline-block;
+    span {
+      font-size: 16px;
+      display: block;
+    }
+  }
+  
+  a {
+    span.icon-info-2 {
+      color: $brand-info-2;
+      vertical-align: middle;
+      &:hover { color: $brand-info-2;}
+    }
+    span.icon-warning {
+      color: $brand-warning;
+      vertical-align: middle;
+      &:hover { color: $brand-warning; }
+    }
+  }
+}
+
+.footer-content {
+  padding: 40px 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 55px 0;
+  }
+}
+
+.footer-content-2 {
+  margin-top: -1px;
+}
+
+.footer-copyright {
+  padding: 15px 0;
+}
+
+.footer-copyright-1 {
+  padding: 0 0 60px;
+}

@@ -1,0 +1,478 @@
+//body
+
+body {
+  letter-spacing: 0.02em;
+  font-weight: $font-weight-base;
+}
+
+//page
+.page {
+  overflow: hidden;
+  min-height: 100vh;
+
+
+  @media (min-width: 768px) {
+    padding-top: 0;
+  }
+  .tablet &,
+  .mobile & { padding-top: 56px; }
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: $font-family-sec;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 0.12em;
+}
+
+h4, .h5 {
+  margin-top: 10px;
+}
+
+h1, .h1 {
+  font-size: 30px;
+  line-height: 1.33;
+
+  @include media-breakpoint-up(xl) {
+    font-size: $h1-font-size;
+    line-height: $h1-line-height;
+  }
+
+}
+
+h2, .h2 {
+  font-size: 28px;
+  line-height: 1.5;
+
+  mark {
+    padding: 5px 60px;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+  }
+}
+
+h3, .h3 {
+  font-size: 26px;
+  line-height: 1.5;
+
+  @include media-breakpoint-up(md) {
+    font-size: $h3-font-size;
+    line-height: $h3-line-height;
+  }
+}
+
+h4, .h4 {
+  font-size: 24px;
+  letter-spacing: 0.06em;
+
+  @include media-breakpoint-up(md) {
+    font-size: $h4-font-size;
+    line-height: $h4-line-height;
+  }
+}
+
+h5, .h5 {
+  font-size: 22px;
+  letter-spacing: 0.02em;
+
+  @include media-breakpoint-up(md) {
+    font-size: $h5-font-size;
+    line-height: $h5-line-height;
+  }
+}
+
+h6, .h6 {
+  font-size: 18px;
+  text-transform: none;
+  letter-spacing: 0;
+
+  @include media-breakpoint-up(md) {
+    font-size: $h6-font-size;
+    line-height: $h6-line-height;
+  }
+
+  a {
+    color: $primary;
+    &:hover {
+      color: $brand-success;
+    }
+  }
+}
+
+
+
+p {
+  margin: 0 0 6px;
+  a:hover {
+
+  }
+}
+
+a.text-base:hover,
+a.text-gray:hover {
+  color: $brand-success;
+}
+a.text-success-custom:hover, a.text-success-custom:focus {
+  color: $secondary;
+}
+
+
+mark {
+  background-color: $brand-success;
+  color: $white-clr;
+}
+
+em {
+  font-style: italic;
+}
+
+.small {
+  font-size: 14px;
+  font-weight: inherit;
+}
+
+//span.h5 { margin: 0; }
+
+a:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.fw-l {
+  font-weight: 300;
+}
+
+.fw-r {
+  font-weight: 400;
+}
+
+.fw-b {
+  font-weight: 700;
+}
+
+
+* + p {
+  margin-top: 10px;
+}
+
+* + hr {
+  margin-top: 30px;
+}
+
+* + .progress-linear-container {
+  margin-top: 59px;
+}
+
+* + .blog-post {
+  margin-top: 90px;
+}
+
+* + .resp-easy-accordion {
+  margin-top: 59px;
+}
+
+* + .btn {
+  margin-top: 30px;
+  @media (min-width: 768px) {
+    margin-top: 60px;
+  }
+}
+
+* + .list-inline {
+  margin-top: 15px;
+}
+
+
+* + .btn-group-variant {
+  margin-top: 40px;
+}
+
+
+* + .row {
+  margin-top: 10px;
+}
+
+* + .rd-mailform {
+  margin-top: 10px;
+}
+
+* + .container-fluid {
+  margin-top: 66px;
+}
+
+* + .offset-custom {
+  &-1 {
+    @media (min-width: 1200px) { margin-top: 84px; }
+  }
+
+  &-2 {
+    margin-top: 60px;
+  }
+  &-3 {
+    margin-top: 0;
+  }
+  &-4 {
+    margin-top: 80px;
+  }
+  &-5 {
+    margin-top: 30px;
+  }
+  &-6 {
+    margin-top: 37px;
+  }
+  &-7 {
+    margin-top: 40px;
+  }
+  &-8 { margin-top: 20px; }
+
+}
+
+a + p {
+  margin-top: 20px;
+}
+
+h6 + a[href^="mailto:"] {
+  margin-top: 5px;
+}
+
+p + .blog-post {
+  margin-top: 30px;
+}
+
+hr + .blog-post {
+  margin-top: 0;
+}
+
+.progress-bar + p {
+  margin-top: 44px;
+}
+
+.progress-bar-wrapper + * {
+  margin-top: 15px;
+}
+
+/*row responsive offset*/
+html {
+  .row-5 { @include grid-offset(5px); }
+  .row-10 { @include grid-offset(10px); }
+  .row-20 { @include grid-offset(10px); }
+  .row-30 { @include grid-offset(30px); }
+  .row-45 { @include grid-offset(45px); }
+  .row-55 { @include grid-offset(55px); }
+  .row-60 { @include grid-offset(60px); }
+
+  @include media-breakpoint-up(xl) {
+    .row-xl-60 { @include grid-offset(60px); }
+  }
+}
+
+
+/*  Postfix */
+
+.postfix-1 {
+  margin-right: 10px;
+}
+
+/* Prefix */
+
+.preffix-1 {
+  @include media-breakpoint-up(md) {
+    margin-left: 90px;
+  }
+}
+
+.preffix-2 {
+  margin-left: 45px;
+}
+
+
+/* text */
+
+.font-secondary {
+  font-family: $font-family-sec;
+  font-weight: 700;
+}
+
+.text-transform-none {
+  text-transform: none;
+}
+
+.letter-spacing {
+  letter-spacing: 0.02em;
+}
+.letter-spacing-2 {
+  letter-spacing: 0.14em;
+}
+
+
+.page {
+  .text-success-custom {
+    color: $primary;
+    padding-bottom: 4px;
+    a {
+      color: $gray-900;
+      transition: .3s all ease;
+      &:hover {
+        color: $primary
+      }
+    }
+
+  }
+
+  .text-gray {
+    color: $gray;
+  }
+
+  .text-primary {
+    color: $primary;
+  }
+
+  .text-secondary {
+    color: $secondary;
+  }
+
+  .text-hover {
+    &:hover {
+      color: $primary;
+    }
+  }
+  .text-base {
+    color: $black;
+  }
+  .text-white {
+    color: $white-clr;
+  }
+}
+
+ul, ol {
+  padding-left: 40px;
+}
+
+/*Ordered list */
+.ordered-list {
+  counter-reset: li;
+
+  > li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    &:before {
+      content: counter(li, decimal)".";
+      counter-increment: li;
+      margin-right: 15px;
+    }
+  }
+}
+
+.ordered-list-mod-1 {
+  @extend .ordered-list;
+  padding-left: 35px;
+  li {
+    position: relative;
+    &:before{
+     position: absolute;
+      left: -35px;
+      top: 7px;
+      color: $gray;
+    }
+    & + li { margin-top: 27px; }
+  }
+}
+
+/* List inline */
+.list-inline {
+  margin-left: -5px;
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.list-inline-mod-1 {
+  li {
+    a {
+      font-size: 18px;
+      font-family: $font-family-sec;
+      font-weight: 700;
+    }
+    & + li { margin-left: 5%; }
+
+    &.active a { color: $primary; }
+  }
+}
+// Horizontal description lists
+//
+// Defaults to being stacked without any of the below styles applied, until the
+// grid breakpoint is reached (default of ~768px).
+
+.dl-horizontal {
+  display: block;
+
+  dt {
+    min-width: 80px;
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+
+  @media (min-width: $dl-horizontal-breakpoint) {
+    display: flex;
+    flex-wrap: wrap;
+
+    dt {
+      text-align: left;
+    }
+  }
+}
+
+.dl-horizontal-mod-1 {
+  dt {
+    float: left;
+    padding-right: 10px;
+  }
+}
+
+// Addresses
+
+address {
+  margin-bottom: 0;
+
+  h6 + * {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  a {
+    color: $black;
+
+    &:hover {
+      color: $brand-success;
+    }
+  }
+
+  dt {
+    font-weight: 300;
+  }
+  dl { margin-bottom: 10px; }
+
+  @media (max-width: 767px) {
+   dd + dt {
+     margin-top: 20px;
+   }
+  }
+}
+.dl-horizontal-2 {
+  a {
+    color: white;
+    &:hover {
+      color: $primary;
+    }
+  }
+}

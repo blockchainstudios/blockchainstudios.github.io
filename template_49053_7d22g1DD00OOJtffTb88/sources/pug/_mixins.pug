@@ -1,0 +1,35 @@
+mixin grid-col(name)
+	div(style="height: 40px; background: #f0f0f0; font: 700 11px/40px monospace;")=name
+
+//- progress - object{progress}
+mixin progress-bar-linear(progress)
+	// Linear progress bar
+	article.progress-linear(class=progress.addClass)
+		.progress-header
+			p= progress.title
+			span.progress-value= progress.valueTo
+		.progress-bar-linear-wrap
+			.progress-bar-linear
+
+mixin card(obj)
+	- var headingId = id=obj.parentId + 'Heading' + obj.number
+	- var bodyId = id=obj.parentId + 'Collapse' + obj.number
+
+	// Bootstrap card
+	article.card.card-custom(class=obj.cardClass)
+		.card-header(id=headingId role='tab')
+			.card-title
+				if(obj.show)
+					a(role='button' data-toggle='collapse' data-parent='#' + obj.parentId, href='#' + bodyId aria-controls=bodyId aria-expanded='true')
+						=obj.header
+						if(obj.arrow !== false)
+							.card-arrow
+				else
+					a.collapsed(role='button' data-toggle='collapse' data-parent='#' + obj.parentId href='#' + bodyId aria-controls=bodyId)
+						=obj.header
+						if(obj.arrow !== false)
+							.card-arrow
+
+		.collapse(id=bodyId class={'show': obj.show} role='tabpanel' aria-labelledby=headingId)
+			.card-body
+				block

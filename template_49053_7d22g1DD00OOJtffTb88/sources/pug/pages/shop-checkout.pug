@@ -1,0 +1,21 @@
+extends  ../_skeleton
+
+block variables
+  - var activeIndex = 5
+block title
+  title Checkout
+block page
+  // Page Header
+  -var header_class = "bg-blog"
+  -var header_h1 = "<span class='font-weight-bold'>Checkout</span>"
+  -var header_small = "Shop"
+  -var header_big = ""
+  -var page_active = "Checkout"
+  -var page_parent = "Shop"
+  include ../elements/_header-transparent
+  // Page Content
+  main.page-content
+    include ../section/about/_section-breadcrumb
+    include ../section/shop/_section-shop-4
+  // Page Footer
+  include ../elements/_footer-light-center

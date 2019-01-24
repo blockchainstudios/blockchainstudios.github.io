@@ -1,0 +1,31 @@
+extends  ../_skeleton
+block variables
+  - var activeIndex = 4
+block title
+  title 404 page
+block page
+  // Page Header
+  -var header_class = ""
+  -var header_h1 = "<span class='font-weight-bold'>page not found</span>"
+  -var header_small = "404"
+  -var colmd_class = "col-md-8 col-md-offset-1"
+  -var button_content = "notify me"
+  -var btn_color = "bg-success-custom"
+  - var navbarFixed = 'rd-navbar-absolute'
+
+  include ../elements/_header-extra
+    block content-1
+      .col-12(class=colmd_class)
+        .jumbotron.jumbotron-3.text-center
+          h1
+            small!= header_small
+            != header_h1
+          p
+            != header_big
+          p.h5.fw-l The page requested couldn't be found - this could be due to a spelling error in the URL or a removed page.
+          a(href="./").btn.btn-sm.btn-success back to homepage
+
+  // Page Content
+  main.page-content
+  // Page Footer
+  include ../elements/_footer-light-center

@@ -1,0 +1,32 @@
+extends  ../_skeleton
+block variables
+  - var activeIndex = 4
+block title
+  title Maintenance
+block page
+  // Page Header
+  -var header_class = ""
+  -var header_h1 = "<span class='font-weight-bold'>IS IN MAINTENANCE MODE</span>"
+  -var header_small = "The Website"
+  -var button_content = "notify me"
+  -var btn_color = "btn-success"
+  - var navbarFixed = 'rd-navbar-absolute'
+  include ../elements/_header-extra
+    block content-1
+      .col-12(class=colmd_class)
+        .jumbotron.jumbotron-3.text-center
+          h1
+            small
+              != header_small
+            != header_h1
+          .row.row-45.justify-content-center
+            .col-lg-8.float-none
+              p.h5.fw-l.text-white Our website is currently under maintenance. We are preparing our website to give you the best user experience you can have on our website. If you want to be notified when we will be back online, please enter your e-mail in the form below. We are always happy to help you.
+            .col-xl-10.offset-custom-5
+              include ../elements/_subscribe
+  // Page Content
+  main.page-content
+  // Page Footer
+  include ../elements/_footer-light-center
+  // Rd Mailform result field
+  .rd-mailform-validate

@@ -1,0 +1,7 @@
+// RD Mailform
+form.rd-mailform(data-result-class='rd-mailform-validate', data-form-type='subscribe', method='post', action='bat/rd-mailform.php')
+  .form-wrap
+    label.form-label( for="forms-news-email" ) Your e-mail...
+    input#forms-news-email.form-input( type="email" name="email" data-constraints="@Email @Required" )
+  .form-wrap
+    button.btn.btn-sm(class=btn_color) Subscribe

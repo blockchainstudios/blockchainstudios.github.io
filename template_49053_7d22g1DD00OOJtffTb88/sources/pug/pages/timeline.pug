@@ -1,0 +1,24 @@
+extends  ../_skeleton
+include ../mixin/_mixin-pagination
+include ../mixin/_mixin-media
+block variables
+  - var activeIndex = 3
+block title
+  title Timeline
+block page
+  // Page Header
+  -var header_class = "bg-blog"
+  -var header_h1 = "<span class='font-weight-bold'>Our Latest News</span>"
+  -var header_small = "Blog"
+  -var header_big = ""
+  -var page_active = "Timeline"
+  -var page_parent = "Blog"
+  include ../elements/_header-transparent
+  // Page Content
+  main.page-content
+    include ../section/about/_section-breadcrumb
+    include ../section/blog/_section-blog-13
+
+  // Page Footer
+  include ../elements/_footer-light-center
+

@@ -1,0 +1,56 @@
+-var  rd_navbar_class_ajuster = "bg-transparent rd-navbar-wrap-mod-1"
+-var  rd_navbar_data_ajuster = {"data-layout":"rd-navbar-fixed","data-sm-layout":'rd-navbar-fixed', "data-md-layout":'rd-navbar-fixed', "data-lg-layout":"rd-navbar-fullwidth", "data-xl-layout":"rd-navbar-static", "data-xxl-layout":"rd-navbar-static", "data-device-layout":"rd-navbar-fixed", "data-md-device-layout":"rd-navbar-fixed","data-lg-device-layout":"rd-navbar-fixed", "data-xl-device-layout":"rd-navbar-static", "data-xxl-device-layout":"rd-navbar-static", "data-stick-up-offset" : "100px"}
+
+header.page-head(class=header_class)
+
+  include _navigation
+
+  section.owl-slider
+    .container
+      .row
+        .owl-carousel.owl-carousel-mod-1.owl-carousel-mod-3(data-items='1', data-md-items='2', data-xl-items='2' , data-loop='true', data-margin='15', data-dots='true', data-autoplay="true", data-lg-dots-each="2", data-xs-stage-padding="15")
+          .owl-item
+            .owl-item-slide-caption
+              .col-12.wow-outer.text-left
+                a( href='movie-details.html' ): +jpg('slider-1-570x364')
+                h6.offset-top-25
+                  a( href='movie-details.html' ) IT (2017)
+                p 2017, USA, Drama, Horror, Thriller
+          .owl-item
+            .owl-item-slide-caption
+              .col-12.wow-outer.text-left
+                a( href='movie-details.html' ): +jpg('slider-2-570x364')
+                h6.offset-top-25
+                  a( href='movie-details.html' ) The Haunting of Hill House
+                p 2018, USA, Drama, Horror, Mystery
+          .owl-item
+            .owl-item-slide-caption
+              .col-12.wow-outer.text-left
+                a( href='movie-details.html' ): +jpg('slider-3-570x364')
+                h6.offset-top-25
+                  a( href='movie-details.html' ) First Man (2018)
+                p 2018, USA, Biography, Drama, History
+          .owl-item
+            .owl-item-slide-caption
+              .col-12.wow-outer.text-left
+                a( href='movie-details.html' ): +jpg('slider-4-570x364')
+                h6.offset-top-25
+                  a( href='movie-details.html' ) Black Mirror
+                p 2011, USA, Drama, Sci-Fi, Thriller
+          .owl-item
+            .owl-item-slide-caption
+              .col-12.wow-outer.text-left
+                a( href='movie-details.html' ): +jpg('slider-5-570x364')
+                h6.offset-top-25
+                  a( href='movie-details.html' ) Daredevil
+                p 2015, USA, Drama, Sci-Fi, Thriller
+          .owl-item
+            .owl-item-slide-caption
+              .col-12.wow-outer.text-left
+                a( href='movie-details.html' ): +jpg('slider-6-570x364')
+                h6.offset-top-25
+                  a( href='movie-details.html' ) Stranger Things
+                p 2016, USA, Drama, Fantasy, Horror
+
+
+

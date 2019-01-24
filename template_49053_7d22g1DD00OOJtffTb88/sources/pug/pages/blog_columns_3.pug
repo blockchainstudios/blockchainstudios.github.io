@@ -1,0 +1,21 @@
+extends  ../_skeleton
+include ../mixin/_mixin-pagination
+block variables
+  - var activeIndex = 3
+block title
+  title 3 Columns Layout
+block page
+  // Page Header
+  -var header_class = "bg-blog"
+  -var header_h1 = "<span class='font-weight-bold'>Blog</span>"
+  -var header_small = "Our Latest News"
+  -var header_big = ""
+  -var page_active = "3 Columns Blog"
+  -var page_parent = "Blog"
+  include ../elements/_header-transparent
+  // Page Content
+  main.page-content
+    include ../section/about/_section-breadcrumb
+    include ../section/blog/_section-blog-4
+  // Page Footer
+  include ../elements/_footer-light-center

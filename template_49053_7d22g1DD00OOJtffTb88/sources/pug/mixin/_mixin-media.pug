@@ -1,0 +1,25 @@
+mixin media_team( class_media, src, title, position, img_class, body_class)
+  .media.flex-column.flex-md-row(class=class_media)
+    .media-left
+      img(src=src class=img_class alt="")
+    .media-body(class=body_class)
+      h6
+        a(href="team-member.html")=title
+      span.text-gray=position
+      if block
+        block
+      else
+        p
+
+mixin media_team-2( class_media, src, title, position, img_class, body_class)
+  .media.flex-column.flex-md-row(class=class_media)
+    .media-left
+      img(src=src class=img_class alt="")
+    .media-body.box-service(class=body_class)
+      h6
+        a(href="team-member.html")=title
+      span.text-gray=position
+      if block
+        block
+      else
+        p

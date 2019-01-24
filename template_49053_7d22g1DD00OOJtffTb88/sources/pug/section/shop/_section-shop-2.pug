@@ -1,0 +1,58 @@
+section.section.section-inset-1
+  .container
+    .row.row-45.justify-content-end
+      .col-12.section-inset-1
+        .table-responsive
+          table.table.table-hover.text-left
+            thead
+              tr.bg-accent
+                th
+                th Product
+                th Price
+                th Quantity
+                th Total
+            tbody
+              tr
+                td: span.icon.icon-xs.fa-trash.icon-gray
+                td: a(href="shop-product.html") Ant-Man and the Wasp
+                td $29.00
+                td
+                  form.quantity
+                    label
+                      span.icon.fa-angle-left.icon-gray
+                      input(value="1")
+                      span.icon.fa-angle-right.icon-gray
+                td $29.00
+              tr
+                td: span.icon.icon-xs.fa-trash.icon-gray
+                td: a(href="shop-product.html") Avengers: Infinity War
+                td $29.00
+                td
+                  form.quantity
+                    label
+                      span.icon.fa-angle-left.icon-gray
+                      input(value="1")
+                      span.icon.fa-angle-right.icon-gray
+                td $29.00
+        form.rd-mailform.coupon-form.subscribe-form.pull-sm-left
+          .form-wrap
+            label.form-label( for="forms-coupon" ) Coupone code
+            input#forms-coupon.form-input( type="text" name="code" )
+          .button-wrap
+            button.btn.btn-success.btn-sm.pull-sm-right(type="submit") Apply coupon
+        button.btn.btn-success.btn-sm.pull-sm-right(type="submit") update cart
+      .col-12.col-md-7.col-md-offset-5.col-xl-4.col-xl-offset-8
+        .table-responsive
+          table.table.table-hover.text-left
+            thead
+             tr.bg-accent
+              th Cart Totals
+              th
+            tbody
+              tr
+                td.text-gray Subtotal
+                td $58.00
+              tr
+                td.text-gray Total
+                td.fw-b $58.00
+        a.btn.btn-success.btn-sm.btn-min-width-lg.offset-custom-5(href='shop-checkout.html') proceed to checkout

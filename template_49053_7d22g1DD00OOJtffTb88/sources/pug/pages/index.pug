@@ -1,0 +1,41 @@
+extends  ../_skeleton
+include ../mixin/_mixin-owl-testimonials
+block variables
+	- var activeIndex = 1
+
+block title
+	title Home
+
+block page
+	// Page Header
+	-var header_h1 = "<span class='font-weight-bold'>your own website</span>"
+	-var header_small = "You Can Create"
+	-var header_big = "The concept behind the creation of most multipurpose themes is to produce a single website template that would suit any type of company"
+	-var header_content = "<div class='btn-group-variant'> <a class='btn btn-success btn-sm' href='#'>BUY a theme</a> <a class='btn btn-white btn-sm' href='#'>view featured</a></div>"
+	-var sectionHeading = "Our satisfied clients"
+	-var sectionBg = "bg-light"
+
+	include ../elements/_header-default
+
+
+	// Page Content
+	main.page-content
+
+		include ../section/index/_section-index-1
+
+		include ../section/index/_section-about
+
+		include ../section/index/_box-office
+
+		include ../section/index/_section-subscribe
+
+		include ../section/index/_section-blog-post
+
+		include ../section/index/_section-clients
+
+		include ../section/index/_section-testimonials
+
+	// Page Footer
+	include ../elements/_footer-light-center
+	// Rd Mailform result field
+	.rd-mailform-validate

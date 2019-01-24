@@ -1,0 +1,304 @@
+/*
+* @subsection   Easy Responsive Tabs
+*
+* @description  Describes style declarations for Easy Responsive Tabs extension
+*
+* @author       Samson Onna
+* @link         samson3d@gmail.com
+* @version      1.0.0
+*/
+//
+// Nav custom
+//
+
+//
+// Table of Contents:
+//
+// Tabs Line
+// Tabs Corporate
+//
+
+// Corporate style
+$tabs-corporate-color: $brand-success;
+$tabs-corporate-background: transparent;
+$tabs-corporate-active-color: $white-clr;
+$tabs-corporate-active-background: $brand-success;
+$tabs-corporate-border: $brand-success;
+
+// Base styles
+.tabs-custom {
+  text-align: left;
+  .nav-tabs {
+    font-size: 0;
+    line-height: 0;
+    word-spacing: 0;
+    border: 0;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  .nav-item {
+    float: none;
+    border: 0;
+    cursor: pointer;
+    transition: .33s all ease;
+  }
+
+  .nav-link {
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+
+  .nav-link.active {
+    cursor: default;
+  }
+}
+
+.tab-content > .tab-pane {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+
+.tab-content > .active {
+  visibility: visible;
+  height: auto;
+  overflow: visible;
+}
+
+// Offsets
+* + .tabs-horizontal.tabs-corporate {
+  margin-top: 25px;
+}
+
+* + .tabs-vertical.tabs-corporate {
+  margin-top: 40px;
+}
+
+@include media-breakpoint-up(md) {
+  * + .tabs-vertical.tabs-corporate {
+    margin-top: 60px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  * + .tabs-vertical.tabs-corporate {
+    margin-top: 80px;
+  }
+}
+
+// Tabs corporate style
+.tabs-corporate {
+  .nav-tabs {
+    position: relative;
+    @include spacing(14px);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    font-family: $font-family-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: $tabs-corporate-color;
+    background: $tabs-corporate-background;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: $border-radius-large;
+    letter-spacing: .1em;
+    padding: 0.375rem 0.75rem;
+    border: 2px solid $tabs-corporate-border;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: $tabs-corporate-active-color;
+    border-color: $tabs-corporate-active-background;
+    background-color: $tabs-corporate-active-background;
+  }
+
+  .tab-content {
+    padding: 30px 0 0;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  //
+  // Horizontal tabs
+  //
+  .tabs-horizontal {
+    &.tabs-corporate {
+      .nav-tabs {
+        position: relative;
+        width: 100%;
+        display: block;
+        @include spacing(14px);
+        text-align: center;
+        border: 0;
+        will-change: transform;
+      }
+
+      .nav-item {
+        display: inline-block;
+        will-change: transform;
+      }
+
+      .nav-link {
+        display: block;
+        position: relative;
+        z-index: 1;
+        letter-spacing: .1em;
+        padding: 0.375rem 0.75rem;
+        border: 2px solid $tabs-corporate-border;
+        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      }
+
+      .nav-link.active,
+      .nav-link:hover {
+        color: $tabs-corporate-active-color;
+        border-color: $tabs-corporate-active-background;
+        background-color: $tabs-corporate-active-background;
+
+        &::before {
+          opacity: 1;
+          transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        }
+      }
+    }
+  }
+
+  //
+  // Vertical tabs
+  //
+  .tabs-vertical {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+
+    .nav-tabs {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      flex-shrink: 0;
+      max-width: 50%;
+    }
+
+    .nav-item {
+      border: 0;
+      width: 100%;
+      text-align: left;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+      box-shadow: 0 9px 21px 0 rgba(#1e1e1e, .13);
+    }
+
+    .tab-content {
+      flex-grow: 1;
+    }
+
+    // Tabs corporate
+    &.tabs-corporate {
+      .nav-tabs {
+        width: auto;
+        min-width: 80px;
+        border: 0;
+      }
+
+      .nav-link {
+        position: relative;
+        padding: 0.375rem 0.75rem;
+        border: 2px solid $tabs-corporate-border;
+        line-height: 1.5;
+        overflow: hidden;
+        text-align: left;
+      }
+
+      .nav-item + .nav-item {
+        margin-top: 10px;
+      }
+
+      .tab-content {
+        padding: 0 0 0 30px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  //
+  // Horizontal tabs
+  //
+  .tabs-horizontal {
+
+    // Tabs Corporate
+    &.tabs-corporate {
+      .tab-content {
+        padding: 40px 0 0;
+      }
+    }
+  }
+
+  //
+  // Vertical tabs
+  //
+  .tabs-vertical {
+
+    // Tabs corporate
+    &.tabs-corporate {
+      .tab-content {
+        padding: 0 0 0 45px;
+      }
+    }
+  }
+}
+.offset-top-10 {
+  padding-top: 10px;
+}
+
+.offset-top-20 {
+  padding-top: 20px;
+}
+
+.offset-top-25 {
+  padding-top: 25px;
+}
+
+.offset-top-30 {
+  padding-top: 30px;
+  @include media-breakpoint-up(sm) {
+    padding-top: 0;
+  }
+}
+
+.offset-top-40-lg-0 {
+  padding-top: 40px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 0;
+  }
+}
+
+.offset-top-55 {
+  padding-top: 55px;
+}
+
+.tabs-shop .nav-tabs .nav-link {
+  font-size: 18px;
+  padding: 15px 30px;
+}
+
+.offset-pagination {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  @include media-breakpoint-up(xl) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+}

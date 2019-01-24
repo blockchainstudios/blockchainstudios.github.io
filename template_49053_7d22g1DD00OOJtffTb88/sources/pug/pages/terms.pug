@@ -1,0 +1,20 @@
+extends  ../_skeleton
+block variables
+  - var activeIndex = 4
+block title
+  title Terms of Service
+block page
+  // Page Header
+  -var header_class = "bg-blog"
+  -var header_h1 = "<span class='font-weight-bold'>TERMS OF SERVICE</span>"
+  -var header_small = "About Our Multipurpose Theme"
+  -var page_active = "Terms of Service"
+  -var page_parent = "Extras"
+  include ../elements/_header-transparent
+  // Page Content
+  main.page-content
+    include ../section/about/_section-breadcrumb
+    include ../section/privacy/_section-privacy-2
+
+  // Page Footer
+  include ../elements/_footer-light-center

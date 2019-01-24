@@ -1,0 +1,46 @@
+extends  ../_skeleton
+block variables
+  - var activeIndex = 4
+block title
+  title Coming soon
+block page
+  // Page Header
+  -var header_class = ""
+  -var header_h1 = "<span class='font-weight-bold'>IS COMING SOON</span>"
+  -var header_small = "Website"
+  -var colmd_class = "col-lg-10 col-lg-offset-1"
+  -var button_content = "notify me"
+  -var btn_color = "btn-success"
+  - var navbarFixed = 'rd-navbar-absolute'
+
+  include ../elements/_header-extra
+    block content-1
+      .col-12(class=colmd_class)
+        .jumbotron.jumbotron-3.text-center
+          h1
+            small
+              != header_small
+            != header_h1
+          p.small
+            != header_big
+
+          // Countdown
+          .DateCountdown(data-type='until', data-date='2018-12-01 00:00:00', data-format='wdhms')
+          p.h5.fw-l Our website will be available soon. Stay tuned to be notified about our launch <br class="d-none d-xl-inline"> in the future.
+          .row.justify-content-center.offset-custom-5
+            .col-xl-10
+              // RD Mailform
+              form.rd-mailform.subscribe-form-3(data-form-output="form-output-global", data-form-type='subscribe', method='post', action='bat/rd-mailform.php')
+                .form-wrap
+                  label.form-label( for="forms-news-email" ) Your e-mail...
+                  input#forms-news-email.form-input( type="email" name="email" data-constraints="@Email @Required" )
+                .button-wrap
+                  button.btn.btn-sm.btn-secondary notify me
+
+  // Page Content
+  main.page-content
+
+  // Page Footer
+  include ../elements/_footer-light-center
+  // Rd Mailform result field
+  .rd-mailform-validate

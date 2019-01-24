@@ -1,0 +1,24 @@
+extends  ../_skeleton
+include ../mixin/_mixin-media
+block variables
+  - var activeIndex = 5
+block title
+  title Single Movie
+block page
+  // Page Header
+  -var header_class = "bg-blog"
+  -var header_h1 = "<span class='font-weight-bold'>Single movie</span>"
+  -var header_small = "Choose your Favorite Movies"
+  -var header_big = ""
+  -var page_active = "Single Movie"
+  -var page_parent = "Shop"
+  include ../elements/_header-transparent
+  // Page Content
+  main.page-content
+    include ../section/about/_section-breadcrumb
+    include ../section/shop/_section-shop-5
+    include ../section/shop/_box-office
+  // Page Footer
+  include ../elements/_footer-light-center
+  // Rd Mailform result field
+  .rd-mailform-validate

@@ -1,0 +1,46 @@
+section.section.section-inset-1
+  .container
+    h2 List Layout - Carousel
+    hr
+    // Owl Carousel
+    .owl-carousel(data-items='1', data-loop='tue', data-margin='30', data-dots="true")
+      .owl-item
+        .row.row-30.text-md-left
+          .col-12.col-xl-6
+            +media_team-2('bg-light media-mod-2', 'images/team-1.jpg', 'Mark Johnson', 'Technical Director')
+              p Quis commodo odio aenean sed adipiscing diam donec adipiscing tristique.
+              ul.list-inline.list-inline-2
+                li: a.fa-facebook(href="#")
+                li: a.fa-twitter(href="#")
+                li: a.fa-pinterest-p(href="#")
+                li: a.fa-vimeo(href="#")
+                li: a.fa-google(href="#")
+          .col-12.col-xl-6
+            +media_team-2('bg-light media-mod-2', 'images/team-2.jpg', 'Jessica Priston', 'Web Developer', '#')
+              p Morbi tempus iaculis urna id volutpat. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent.
+              ul.list-inline.list-inline-2
+                li: a.fa-facebook(href="#")
+                li: a.fa-twitter(href="#")
+                li: a.fa-pinterest-p(href="#")
+                li: a.fa-vimeo(href="#")
+                li: a.fa-google(href="#")
+      .owl-item
+        .row.row-45.text-md-left
+          .col-12.col-xl-6
+            +media_team-2('bg-light media-mod-2', 'images/team-3.jpg', 'Sam Kromstain', 'Team Lead', '#')
+              p Blandit cursus risus at ultrices mi. Magna ac placerat vestibulum lectus mauris ultrices.
+              ul.list-inline
+                li: a.fa-facebook(href="#")
+                li: a.fa-twitter(href="#")
+                li: a.fa-pinterest-p(href="#")
+                li: a.fa-vimeo(href="#")
+                li: a.fa-google(href="#")
+          .col-12.col-xl-6
+            +media_team-2('bg-light media-mod-2', 'images/team-4.jpg', 'Edna Barton', 'Assistant', '#')
+              p Lectus proin nibh nisl condimentum id venenatis a condimentum.
+              ul.list-inline
+                li: a.fa-facebook(href="#")
+                li: a.fa-twitter(href="#")
+                li: a.fa-pinterest-p(href="#")
+                li: a.fa-vimeo(href="#")
+                li: a.fa-google(href="#")

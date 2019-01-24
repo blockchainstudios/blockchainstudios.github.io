@@ -1,0 +1,15 @@
+
+section.section.section-xxl.bg-default
+  .container
+    h2 Search Results
+    .row.justify-content-center.offset-top-20
+      .col-lg-9
+        // RD Search
+        form.rd-form.rd-search.rd-form-inline(action='search-results.html' method='GET')
+          .form-wrap
+            label.form-label(for='rd-search-form-input') Search
+            input.form-input(id='rd-search-form-input' type='text' name='s' autocomplete='off')
+          .form-wrap.form-button
+            button.btn.btn-success.btn-sm.btn-min-width-xs(type='submit') Search
+
+        .rd-search-results

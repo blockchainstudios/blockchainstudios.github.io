@@ -1,0 +1,281 @@
+
+
+
+.video-box-overlay {
+	position: relative;
+	.video-box {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		.video-box-play {
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			text-align: center;
+			.icon {
+				font-size: 60px;
+				line-height: 60px;
+				transition: 0.2s;
+			}
+			a {
+				display: inline-block;
+			}
+		}
+		.video-box-inner {
+			position: absolute;
+			padding-left: 30px;
+			bottom: 17px;
+			font-size: 18px;
+			font-weight: 700;
+			font-family: $font-family-serif;
+			@include media-breakpoint-up(md) {
+				padding-left: 90px;
+			}
+			@include media-breakpoint-up(lg) {
+				padding-left: 30px;
+			}
+			a {
+				color: $white;
+				transition: 0.4s;
+				&:hover {
+					color: $primary;
+				}
+			}
+
+			.item-1 {
+				position: relative;
+				margin-right: 14px;
+				padding-right: 14px;
+				display: inline-block;
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 50%;
+					right: 0;
+					transform: translateY(-50%);
+					width: 2px;
+					height: 16px;
+					background-color: rgba(255, 255, 255, 0.8);
+				}
+			}
+			.item-2 {
+				display: inline-block;
+
+			}
+		}
+	}
+}
+
+.text-box-overlay {
+	h3 {
+		padding-bottom: 20px;
+		a {
+			color: $white;
+			transition: .3s ease-in-out;
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+	.text-box-inners {
+		color: #808080;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 20px;
+		li {
+			display: inline-block;
+		}
+		.item-1 {
+			margin-right: 12px;
+			padding-right: 15px;
+			position: relative;
+			&:after {
+				content: '';
+				position: absolute;
+				width: 2px;
+				height: 13px;
+				background-color: #808080;
+				top: 50%;
+				right: 0;
+				transform: translateY(-50%);
+			}
+		}
+		.item-2 {
+			margin-right: 12px;
+			padding-right: 15px;
+			position: relative;
+			&:after {
+				content: '';
+				position: absolute;
+				width: 2px;
+				height: 13px;
+				background-color: #808080;
+				top: 50%;
+				right: 0;
+				transform: translateY(-50%);
+			}
+			a {
+				transition: .3s all ease;
+				color: $primary;
+				&:hover {
+					color: #808080;
+				}
+			}
+		}
+	}
+}
+
+.poster-blog {
+	h6 {
+		a {
+			color: $gray-900;
+			&:hover {
+				color: $primary;
+				transition: 0.4s;
+			}
+		}
+
+	}
+
+	a + p {
+		margin-top: 10px;
+	}
+	.review {
+		margin-bottom: 10px;
+	}
+	.price {
+		text-align: left;
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				font-size: 22px;
+				font-weight: 700;
+				font-family: $font-family-sec;
+				&:first-child {
+					padding-right: 64px;
+				}
+				a {
+					color: $primary;
+					font-size: 18px;
+					transition: 0.4s;
+					&:hover {
+						color: $gray-900;
+					}
+				}
+			}
+		}
+	}
+}
+
+.review-2 {
+	@include media-breakpoint-up(sm) {
+		margin-bottom: 25px;
+	}
+}
+
+
+.cast-box-media {
+	position: relative;
+}
+.cast-box-text {
+	position: absolute;
+	bottom: 30px;
+	left: 49%;
+	transform: translateX(-50%);
+}
+
+.info-box {
+	padding: 0;
+	margin: 0;
+
+	li {
+		display: inline-block;
+		background-color: $gray-light;
+		border-radius: 4px;
+		padding: 7px 22px;
+		margin-right: 5px;
+	}
+}
+
+.section-coming {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 80vh;
+	padding-top: 0px;
+	background-image: url(../images/coming.jpg);
+	background-size: cover;
+	.ie-11 &,
+	.ie-edge & {
+		padding-top: 190px;
+		.container {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	.iphone &,
+	.ipad & {
+		padding-top: 0;
+	}
+
+	@include media-breakpoint-up(md) {
+		padding-top: 190px;
+	}
+	@include media-breakpoint-up(lg) {
+		padding-top: 90px;
+	}
+}
+
+.box-office-media {
+	position: relative;
+	cursor: pointer;
+	img {
+		width: 100%;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.58);
+		opacity: 0;
+		transition: .4s ease-in-out;
+	}
+	&:hover {
+		&:after {
+			opacity: 1;
+		}
+	}
+}
+
+.box-service {
+	a {
+		color: $primary;
+		transition: .4s ease-in-out;
+		&:hover {
+			color: $secondary;
+		}
+	}
+}
+
+.box-service-2 {
+	a {
+		color: $white;
+		transition: .4s ease-in-out;
+		&:hover {
+			color: $primary;
+		}
+	}
+}

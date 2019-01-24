@@ -1,0 +1,25 @@
+extends  ../_skeleton
+
+block variables
+  - var activeIndex = 4
+
+block title
+  title Services
+block page
+  // Page Header
+  -var header_class = "bg-blog"
+  -var header_h1 = "<span class='font-weight-bold'>services</span>"
+  -var header_small = "services we offer"
+  -var page_active = "Services"
+  -var page_parent = "Pages"
+
+  include ../elements/_header-transparent
+  // Page Content
+  main.page-content
+    include ../section/about/_section-breadcrumb
+    include ../section/services/_section-services-2
+    include ../section/services/_section-services-3
+    include ../section/services/_section-services-4
+    include ../section/services/_section-services-5
+  // Page Footer
+  include ../elements/_footer-light-center

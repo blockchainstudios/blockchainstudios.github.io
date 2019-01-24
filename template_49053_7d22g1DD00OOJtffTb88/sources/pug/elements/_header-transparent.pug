@@ -1,0 +1,12 @@
+-var  rd_navbar_data_ajuster = {"data-layout":"rd-navbar-fixed","data-sm-layout":'rd-navbar-fixed', "data-md-layout":'rd-navbar-fixed', "data-lg-layout":"rd-navbar-fullwidth", "data-xl-layout":"rd-navbar-static", "data-xxl-layout":"rd-navbar-static", "data-device-layout":"rd-navbar-fixed", "data-md-device-layout":"rd-navbar-fixed","data-lg-device-layout":"rd-navbar-fixed", "data-xl-device-layout":"rd-navbar-static", "data-xxl-device-layout":"rd-navbar-static", "data-stick-up-offset" : "100px"}
+-var  rd_navbar_class_ajuster = "bg-transparent"
+
+
+header.page-head(class=header_class)
+  include _navigation
+  section.relative.text-center
+    .container
+      .jumbotron.text-center
+        h1
+          small!= header_small
+          != header_h1

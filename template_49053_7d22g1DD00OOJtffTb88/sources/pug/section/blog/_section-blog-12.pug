@@ -1,0 +1,90 @@
+.section.section-inset-1
+  .container
+    .row
+      .col-12.col-lg-12
+        section.section-inset-2
+          h2 Ant-Man and the Wasp
+          hr
+          .row.row-45
+            .col-12.col-md-12.col-lg-6.text-lg-left.well1
+              .row
+                .col-sm-6
+                  img(src="images/gallery-1.jpg" alt="")
+                .col-sm-6.text-left.offset-top-30
+                  .review-2
+                    span.icon.fa-star.icon-waring-2
+                    span.icon.fa-star.icon-waring-2
+                    span.icon.fa-star.icon-waring-2
+                    span.icon.fa-star.icon-waring-2
+                    span.icon.fa-star.icon-waring-2.text-gray
+                  span.font-weight-bold Genre:&nbsp;
+                    span.font-weight-light.text-primary Action<br>
+                  span.font-weight-bold Release year:&nbsp;
+                    span.font-weight-light 2018 <br>
+                  span.font-weight-bold Running time:&nbsp;
+                    span.font-weight-light 120 min <br>
+                  span.font-weight-bold Country:&nbsp;
+                    span.font-weight-light.text-primary USA <br>
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                  p Sed velit dignissim sodales ut eu sem integer. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum.
+
+            .col-12.col-md-12.col-lg-6.text-center.text-lg-left
+              .video-box-overlay
+                img(src="images/index-2.jpg" alt="")
+                .video-box
+                  .video-box-play
+                    a(href='https://youtu.be/UUkn-enk2RU' data-lightgallery='item'): span.icon.icon-white.fl-line-ui-play126
+                  .video-box-inner
+                    a.link-1(href='#'): span.item-1 Ant-Man and the Wasp
+                    span.text-white The Trailer
+
+        +section("section section-inset-1", "Actor Cast")
+          .row.row-45
+            .col-12.col-md-6.col-xl-3
+              .cast-box-media
+                img(src="images/cast-1.jpg" alt="")
+                .cast-box-text
+                  h6.text-white Mark Johnson
+            .col-12.col-md-6.col-xl-3
+              .cast-box-media
+                img(src="images/cast-2.jpg" alt="")
+                .cast-box-text
+                  h6.text-white Jessica Priston
+            .col-12.col-md-6.col-xl-3
+              .cast-box-media
+                img(src="images/cast-3.jpg" alt="")
+                .cast-box-text
+                  h6.text-white Sam Kromstain
+            .col-12.col-md-6.col-xl-3
+              .cast-box-media
+                img(src="images/cast-4.jpg" alt="")
+                .cast-box-text
+                  h6.text-white Edna Barton
+
+        section.section-inset-2
+          .row.justify-content-center
+            .col-sm-10.text-center
+              h2 Reviews
+              hr
+              include ../../elements/_comments
+        section
+          .row.justify-content-center
+            .col-md-8.text-center
+              h4 leave your comment
+              // RD Mailform
+              form.rd-mailform.text-left( data-form-output="form-output-global", data-form-type='forms', method='post', action='bat/rd-mailform.php' )
+                .row.row-10
+                  .col-12.col-md-6
+                    .form-wrap
+                      label.form-label( for="forms-name" ) Your first name...
+                      input#forms-name.form-input( type="text" name="name" data-constraints='@Required' )
+                  .col-12.col-md-6
+                    .form-wrap
+                      label.form-label( for="forms-email" ) Your e-mail...
+                      input#forms-email.form-input( type="email" name="email" data-constraints="@Email @Required" )
+                  .col-12.col-md-12
+                    .form-wrap
+                      label.form-label( for="forms-message" ) Message:
+                      textarea#forms-message.form-input( name="message" data-constraints="@Required" )
+                  .col-12.text-center
+                    button.btn.btn-third.btn-sm.btn-min-width( type="submit" ) Submit

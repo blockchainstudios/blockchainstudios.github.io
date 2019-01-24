@@ -1,0 +1,23 @@
+extends  ../_skeleton
+include ../mixin/_mixin-section
+block variables
+  - var activeIndex = 4
+block title
+  title Progress Bars
+block page
+  // Page Header
+  -var header_class = "bg-blog"
+  -var header_h1 = "<span class='font-weight-bold'>Progress Bars</span>"
+  -var header_small = "interface elements"
+  -var header_big = ""
+  -var page_active = "Progress Bars"
+  -var page_parent = "Elements"
+  include ../elements/_header-transparent
+  // Page Content
+  main.page-content
+    include ../section/about/_section-breadcrumb
+    include ../section/progress-bars/_section-progress-2
+    include ../section/progress-bars/_section-progress-3
+    include ../section/progress-bars/_section-progress-4
+  // Page Footer
+  include ../elements/_footer-light-center

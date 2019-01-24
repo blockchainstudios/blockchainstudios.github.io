@@ -1,0 +1,9 @@
+mixin section (section_class, title, class_col)
+  section(class=section_class)
+    .container
+      h2= title
+      hr
+      .row.justify-content-center
+        .col-12(class=class_col)
+          if block
+            block

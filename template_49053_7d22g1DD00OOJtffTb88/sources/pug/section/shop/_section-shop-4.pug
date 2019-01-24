@@ -1,0 +1,170 @@
+.section.section-inset-1
+  .container
+    .row.justify-content-center
+      .col-12.col-lg-8.col-lg-offset-2
+        section
+            h4 Returning customer?
+            a(href="login.html").text-success-custom Click here to login
+        section.section
+            h4 Have a coupon?
+            a(href="#").text-success-custom Click here to enter your code
+        section
+            h4 Billing Details
+            // RD Mailform
+            form.rd-mailform
+              .row.row-10
+                .col-12.col-md-6
+                  .form-wrap
+                    label.form-label( for="forms-check-name" ) Your first name...
+                    input#forms-check-name.form-input( type="text" name="name" data-constraints="@Required" )
+                .col-12.col-md-6
+                  .form-wrap
+                    label.form-label( for="forms-check-last-name" ) Your last name...
+                    input#forms-check-last-name.form-input( type="text" name="last-name" data-constraints="@Required" )
+                .col-12
+                  .form-wrap
+                    label.form-label( for="forms-check-company" ) Company...
+                    input#forms-check-company.form-input( type="text" name="company" data-constraints="@Required" )
+                .col-12.col-md-6
+                  .form-wrap
+                    label.form-label( for="forms-check-email" ) Your e-mail...
+                    input#forms-check-email.form-input( type="email" name="email" data-constraints="@Email @Required" )
+                .col-12.col-md-6
+                  .form-wrap
+                    label.form-label( for="forms-check-phone" ) Your phone...
+                    input#forms-check-phone.form-input( type="text" name="phone" data-constraints="@PhoneNumber @Required" )
+                .col-12.select
+                  .form-wrap.form-wrap-validation
+                    label.form-label( for="involve-form-country" )
+                    select#involve-form-country.form-input( name='country', data-constraints='@Required', data-placeholder='Select Your Country' )
+                      option( label='Country' )
+                      option( selected ) Country...
+                      option USA
+                      option UK
+                      option Ukraine
+                      option Australia
+                .col-12
+                  .form-wrap
+                    label.form-label( for="forms-check-address" ) Street address...
+                    input#forms-check-address.form-input( type="text" name="address" data-constraints="@Required" )
+                .col-12
+                  .form-wrap
+                    label.form-label( for="forms-check-type" ) Apartment, suite, unit etc...
+                    input#forms-check-type.form-input( type="text" name="address" data-constraints="@Required" )
+                .col-12
+                  .form-wrap
+                    label.form-label( for="forms-check-city" ) City...
+                    input#forms-check-city.form-input( type="text" name="city" data-constraints="@Required" )
+                .col-12.col-md-6
+                  .form-wrap
+                    label.form-label( for="forms-check-State1" ) State...
+                    input#forms-check-State1.form-input( type="text" name="State" data-constraints="@Required" )
+                .col-12.col-md-6
+                  .form-wrap
+                    label.form-label( for="forms-check-postcode" ) Postcode...
+                    input#forms-check-postcode.form-input( type="text" name="postcode" data-constraints="@Required" )
+                .col-12.text-left
+                  .form-wrap
+                    label.checkbox-inline
+                      input( name="passion", value="value-6", type="checkbox" )
+                      span Create an account
+
+        section.section.section-inset-1
+            h4 Ship to different address
+            // RD Mailform
+            form.rd-mailform.row-30(data-result-class='rd-mailform-validate', data-form-type='contact', method='post', action='bat/rd-mailform.php')
+              .row.row-10
+                .col-12.col-md-6
+                  .form-wrap
+                    label.form-label( for="forms-check-name1" ) Your first name...
+                    input#forms-check-name1.form-input( type="text" name="name1" data-constraints="@Required" )
+                .col-12.col-md-6
+                  .form-wrap
+                    label.form-label( for="forms-check-last-name1" ) Your last name...
+                    input#forms-check-last-name1.form-input( type="text" name="last-name1" data-constraints="@Required" )
+                .col-12
+                  .form-wrap
+                    label.form-label( for="forms-check-company1" ) Company...
+                    input#forms-check-company1.form-input( type="text" name="company1" data-constraints="@Required" )
+                .col-12.select
+                  // RD SelectMenu
+                  .form-wrap.form-wrap-validation
+                    label.form-label( for="involve-form-country1" )
+                    select#involve-form-country1.form-input( name='country', data-constraints='@Required', data-placeholder='Select Your Country' )
+                      option( label='Country' )
+                      option( selected ) Country...
+                      option USA
+                      option UK
+                      option Ukraine
+                      option Australia
+                .col-12
+                  .form-wrap
+                    label.form-label( for="forms-check-address1" ) Street address...
+                    input#forms-check-address1.form-input( type="text" name="address1" data-constraints="@Required" )
+                .col-12
+                  .form-wrap
+                    label.form-label( for="forms-check-apartment1" ) Apartment, suite, unit etc...
+                    input#forms-check-apartment1.form-input( type="text" name="apartment1" data-constraints="@Required" )
+                .col-12
+                  .form-wrap
+                    label.form-label( for="forms-check-city1" ) City...
+                    input#forms-check-city1.form-input( type="text" name="city1" data-constraints="@Required" )
+                .col-12.col-md-6.left-col
+                  .form-wrap
+                    label.form-label( for="forms-check-State" ) State...
+                    input#forms-check-State.form-input( type="text" name="country1" data-constraints="@Required" )
+                .col-12.col-md-6.right-col
+                  .form-wrap
+                    label.form-label( for="forms-check-postcode1" ) Postcode...
+                    input#forms-check-postcode1.form-input( type="text" name="postcode" data-constraints="@Required" )
+                .col-12.col-md-12
+                  .form-wrap
+                    label.form-label( for="forms-check-notes1" ) Order notes...
+                    textarea#forms-check-notes1.form-input( name="notes" data-constraints="@Required" )
+        section.section-inset-3
+          h4 your order
+          .row.offset-custom-5
+            .col-12
+              .table-responsive
+                table.table.table-striped-mod-1
+                  thead
+                    tr.bg-accent
+                      th Product
+                      th
+                  tbody.text-left
+                    tr
+                      td: a(href="shop-product.html") Reebok Detroit Red Wing
+                      td $29.00
+                    tr
+                      td Subtotal
+                      td $29.00
+                    tr
+                      td Shipping
+                      td Please fill in your details to see available shipping methods.
+                    tr
+                      td Total
+                      td $29.00
+          .row.offset-custom-5
+            .col-12
+              .payment-wrap.text-left.bg-light
+                .payment
+                  .form-wrap
+                    label.radio-inline
+                      input( name="pay", value="value-1", type="radio" )
+                      span.h6.text-success-custom Cheque Payment
+                  p.well1 Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.
+                .payment
+                  .form-wrap
+                    label.radio-inline
+                      input( name="pay", value="value-2", type="radio" )
+                      span.h6.text-success-custom PayPal
+                  p.well1: a(href='#').text-success-custom What is PayPal?
+                  .img-group.well1.text-left
+                    a(href='#'): img(alt='' src='images/shop-pay-1.png')
+                    a(href='#'): img(alt='' src='images/shop-pay-2.png')
+                    a(href='#'): img(alt='' src='images/shop-pay-3.png')
+                    a(href='#'): img(alt='' src='images/shop-pay-4.png')
+
+
+                    // Rd Mailform result field
+                    .rd-mailform-validate

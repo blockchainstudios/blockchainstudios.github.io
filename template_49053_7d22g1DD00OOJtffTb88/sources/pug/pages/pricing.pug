@@ -1,0 +1,24 @@
+extends  ../_skeleton
+block variables
+  - var activeIndex = 4
+block title
+  title Pricing
+block page
+  // Page Header
+  -var header_class = "bg-blog"
+  -var header_h1 = "<span class='font-weight-bold'>Pricing</span>"
+  -var header_small = "Don't miss something special!"
+  -var header_big = ""
+  -var page_active = "Pricing"
+  -var page_parent = "Pages"
+  include ../elements/_header-transparent
+  // Page Content
+  main.page-content
+    include ../section/about/_section-breadcrumb
+    include ../section/pricing/_section-pricing-2
+    include ../section/pricing/_section-pricing-3
+    include ../section/pricing/_section-pricing-4
+    include ../section/pricing/_section-pricing-5
+
+  // Page Footer
+  include ../elements/_footer-light-center

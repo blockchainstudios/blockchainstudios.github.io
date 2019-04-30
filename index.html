@@ -16,6 +16,7 @@
         <link href="thumbs2.css" rel="stylesheet" />
     <link href="thumbnail-slider.css" rel="stylesheet" />
     <script src="thumbnail-slider.js" type="text/javascript"></script>
+<script src="https://www.moneybutton.com/moneybutton.js"></script>
 
 		<!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -34,7 +35,25 @@
   </head>
   
   <body>
-	  
+	  <div style="position:fixed;bottom:0;left:0;">
+<div id='my-money-button'></div>
+<script>
+  const div = document.getElementById('my-money-button')
+  moneyButton.render(div, {
+    to: "1ANpLsyPZj5wp8sr3Dt4rdpYHPvsNQLegu",
+    amount: "1",
+    currency: "USD",
+    label: "Donate",
+    clientIdentifier: "some public client identifier",
+    buttonId: "234325",
+    buttonData: "{}",
+    type: "tip",
+    onPayment: function (arg) { console.log('onPayment', arg) },
+    onError: function (arg) { console.log('onError', arg) }
+  })
+</script>
+</center>
+</div>
     <!-- Page-->
     <div class="page text-center">
       <div class="preloader">
@@ -188,7 +207,7 @@
 <br>
 <br>
 
-          <div class="container">
+           <div class="container">
             <div class="row">
               <div class="owl-carousel owl-carousel-mod-1 owl-carousel-mod-3" data-items="1" data-md-items="2" data-xl-items="2" data-loop="true" data-margin="15" data-dots="true" data-autoplay="true" data-lg-dots-each="2" data-xs-stage-padding="15">
                 <div class="owl-item">
@@ -380,13 +399,19 @@
                     href="movie-details.html"><img src="images/slider-2-570x364.jpg" alt="" width="570" height="364"/></a>
                       <h6 class="offset-top-25"><a href="movie-details.html">Your Film here!</a></h6>
                       <p> </p>
+                      
                     </div>
+                    
                   </div>
+                  
                 </div>
                 
               </div>
+              
             </div>
+            
           </div>
+          
         </section>
          
 <script src="//www.powr.io/powr.js?external-type=html"></script> 
@@ -407,7 +432,10 @@
           <div class="container">
              <img src="images/horizontalLogo.png" alt="">
              <h3 class="font-weight-normal text"> The Fan 
-                    Owned Movie Studio </h3>
+                    Owned Movie Studio </h3> 
+                    <center>
+
+                    
             <hr class="hr-primary">
             <div class="row row-45">
               <div class="col-12 col-md-12 col-lg-6 text-center text-lg-left">
@@ -418,6 +446,8 @@
                     class="item-1"><a href="movie-details.html">The Fan 
                     Owned Movie Studio</a></span><span class="item-2">Under 
                     Construction</span></div>
+                    
+                    
                   </div>
                 </div>
               </div>

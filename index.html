@@ -1,177 +1,212 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
-  <head>
-    <!-- Site Title-->
-    <title>Home</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400%7CRoboto+Slab:300,400,700%7CMontserrat:700%7CPacifico">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-     
-<script src="https://www.moneybutton.com/moneybutton.js"></script>
 
-<link rel="stylesheet" href="ism/css/my-slider.css"/>
-<script src="ism/js/ism-2.2.min.js"></script>
+<head>
+  <!-- Site Title-->
+  <title>Home</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Stylesheets-->
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Roboto:300,400%7CRoboto+Slab:300,400,700%7CMontserrat:700%7CPacifico">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="ism/css/my-slider.css" />
+  <link rel="stylesheet" href="css/responsive.css">
 
-		<!--[if lt IE 10]>
+  <script src="https://www.moneybutton.com/moneybutton.js"></script>
+
+  <script src="ism/js/ism-2.2.min.js"></script>
+
+  <!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
 		<![endif]-->
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45974565-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-45974565-3');
-</script>
-<style>
-body { background-color: #fff; color: #000; padding: 0; margin: 0; }
-.container { width: 1312px; margin: auto; padding-top: 1em; }
-.container .ism-slider { margin-left: auto; margin-right: auto; }
-</style>
-  </head>
-  
-  <body style="background-color:#282828">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45974565-3"></script>
   <script>
-  const div = document.getElementById('my-money-button')
-  moneyButton.render(div, {
-    to: "1PMk71TLF9mMzgVKth36kN8MRJTWvEeGbh",
-    amount: "1",
-    currency: "USD",
-    label: "Donate",
-    clientIdentifier: "066f434d69de9157a398c978054e9185",
-    buttonId: "234325",
-    buttonData: "{}",
-    type: "tip",
-    onPayment: function (arg) { console.log('onPayment', arg) },
-    onError: function (arg) { console.log('onError', arg) }
-  })
-</script>
-</center>
-    <!-- Page-->
-    <div class="page text-center">
-      <div class="preloader">
-        <div class="preloader-body">
-          <div class="cssload-container">
-            <div class="cssload-speeding-wheel"></div>
-          </div>
-          <p>Loading...</p>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-45974565-3');
+  </script>
+  <style>
+    body {
+      background-color: #fff;
+      color: #000;
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      width: 1312px;
+      margin: auto;
+      padding-top: 1em;
+    }
+
+    .container .ism-slider {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+
+<body style="background-color:#282828">
+  <script>
+    const div = document.getElementById('my-money-button')
+    moneyButton.render(div, {
+      to: "1PMk71TLF9mMzgVKth36kN8MRJTWvEeGbh",
+      amount: "1",
+      currency: "USD",
+      label: "Donate",
+      clientIdentifier: "066f434d69de9157a398c978054e9185",
+      buttonId: "234325",
+      buttonData: "{}",
+      type: "tip",
+      onPayment: function (arg) {
+        console.log('onPayment', arg)
+      },
+      onError: function (arg) {
+        console.log('onError', arg)
+      }
+    })
+  </script>
+  </center>
+  <!-- Page-->
+  <div class="page text-center">
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
         </div>
+        <p>Loading...</p>
       </div>
-      <!-- Page Header-->
-      <header class="page-head" style="background-color:#282828">
-        <!-- RD Navbar-->
-        <div class="rd-navbar-wrap bg-transparent rd-navbar-wrap-mod-1">
-          <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-device-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-stick-up-offset="100px" >
-            <!--(data-layout='rd-navbar-fixed',data-sm-layout='rd-navbar-fullwidth', data-lg-layout=rd_navbar_data_ajuster )-->
-            <div class="rd-navbar-top-panel bg-accent">
-              <div class="rd-navbar-inner">
-                <button class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".list-inline" type="submit"><span></span></button><a class="fa-envelope" href="mailto:#">info@demolink.org</a><a class="fa-mobile-phone preffix-2" href="callto:#">1-800-1234-567</a>
-                <ul class="list-inline pull-right">
-                  <li><a class="fa-facebook" href="#"></a></li>
-                  <li><a class="fa-twitter" href="#"></a></li>
-                  <li><a class="fa-pinterest-p" href="#"></a></li>
-                  <li><a class="fa-vimeo" href="#"></a></li>
-                  <li><a class="fa-google-plus" href="#"></a></li>
-                  <li><a class="fa-rss" href="#"></a></li>
-                  <li class="text-left"><a class="fa-envelope" href="mailto:#">info@demolink.org</a></li>
-                  <li class="text-left"><a class="fa-mobile-phone" href="callto:#">1-800-1234-567</a></li>
-                </ul>
-              </div>
-            </div>
-            
+    </div>
+    <!-- Page Header-->
+    <header class="page-head" style="background-color:#282828">
+      <!-- RD Navbar-->
+      <div class="rd-navbar-wrap bg-transparent rd-navbar-wrap-mod-1">
+        <nav<nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+          data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-static"
+          data-xxl-layout="rd-navbar-static" data-device-layout="rd-navbar-fixed"
+          data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed"
+          data-xl-device-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static"
+          data-stick-up-offset="100px">
+          <!--(data-layout='rd-navbar-fixed',data-sm-layout='rd-navbar-fullwidth', data-lg-layout=rd_navbar_data_ajuster )-->
+          <div class="rd-navbar-top-panel bg-accent">
             <div class="rd-navbar-inner">
-              <!-- RD Navbar Panel-->
-              <div class="rd-navbar-panel">
-                <!-- RD Navbar Toggle-->
-                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap" type="submit"><span></span></button>
-                						<img src="images/logo-default.png" alt="" style = "width:280px; margin-left:100px" >
-
-                <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand">
-					
-					<a class="brand-name" href="index.html">
-						</a></div>
-              </div>
-              
-              <div class="rd-navbar-nav-wrap">
-                <!-- RD Navbar Search-->
-                  
-                
-                <!-- RD Navbar Nav-->
-                <ul class="rd-navbar-nav" style ="padding-left: 250px" >
-                  <li class="active"><a href="#home">Home</a></li>
-                     <li><a href="#">Now Streaming</a>
-             
-                  </li>
-                  <li><a href="#inproduction">In Production</a>
-                  
-                  <li><a href="#indevelopment">In Development</a>
-                   
-                  </li>
-               
-                  <li><a href="ted.html">Filmmakers</a></li>
-                  <li><a href="main.html">About</a></li>
-                </ul>
-              </div>
-
+              <button class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".list-inline"
+                type="submit"><span></span></button><a class="fa-envelope" href="mailto:#">info@demolink.org</a><a
+                class="fa-mobile-phone preffix-2" href="callto:#">1-800-1234-567</a>
+              <ul class="list-inline pull-right">
+                <li><a class="fa-facebook" href="#"></a></li>
+                <li><a class="fa-twitter" href="#"></a></li>
+                <li><a class="fa-pinterest-p" href="#"></a></li>
+                <li><a class="fa-vimeo" href="#"></a></li>
+                <li><a class="fa-google-plus" href="#"></a></li>
+                <li><a class="fa-rss" href="#"></a></li>
+                <li class="text-left"><a class="fa-envelope" href="mailto:#">info@demolink.org</a></li>
+                <li class="text-left"><a class="fa-mobile-phone" href="callto:#">1-800-1234-567</a></li>
+              </ul>
             </div>
+          </div>
+
+          <div class="rd-navbar-inner">
+            <!-- RD Navbar Panel-->
+            <div class="rd-navbar-panel">
+              <!-- RD Navbar Toggle-->
+              <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                type="submit"><span></span></button>
+              <img class="img_" src="images/logo-default.png" alt="" style="width:280px; margin-left:100px">
+
+              <!-- RD Navbar Brand-->
+              <div class="rd-navbar-brand">
+
+                <a class="brand-name" href="index.html">
+                </a></div>
+            </div>
+
+            <div class="rd-navbar-nav-wrap">
+              <!-- RD Navbar Search-->
+
+
+              <!-- RD Navbar Nav-->
+              <ul class="rd-navbar-nav" style="padding-left: 250px">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#">Now Streaming</a>
+
+                </li>
+                <li><a href="#inproduction">In Production</a>
+
+                <li><a href="#indevelopment">In Development</a>
+
+                </li>
+
+                <li><a href="ted.html">Filmmakers</a></li>
+                <li><a href="main.html">About</a></li>
+              </ul>
+            </div>
+
+          </div>
 
           </nav>
 
-        </div>
-        
-                                          <section id = "home">
-<center>
-         <iframe src="example.html" width="100%" height="670" scrolling="no" frameBorder="0"></iframe></section>
-                                             <section id = "inproduction">
-                  <iframe src="exhibition.html" width="100%" height="270" scrolling="no" frameBorder="0"></iframe></section>
-                                    <section id = "inproduction">
-                  <iframe src="inproductionslider.html" width="100%" height="270" scrolling="no" frameBorder="0"></iframe></section>
-                  <section id = "inproduction">
-                  <iframe src="indevelopmentslider.html" width="100%" height="270" scrolling="no" frameBorder="0"></iframe></section>
-                  <iframe src="tokenslider.html" width="100%" height="270" scrolling="no" frameBorder="0"></iframe></section>
-</center>
-       </header>
-      <!-- Page ContentRaise $1 - $50 Million dollars in cash or 
+      </div>
+
+      <section id="home">
+        <center>
+          <!-- <?php include "example.html" ?> -->
+          <iframe class="top" src="example.html" width="100%" height="670" scrolling="no" frameBorder="0"></iframe>
+      </section>
+      <section id="inproduction">
+        <iframe src="exhibition.html" width="100%" height="270" scrolling="no" frameBorder="0"></iframe></section>
+      <section id="inproduction">
+        <iframe src="inproductionslider.html" width="100%" height="270" scrolling="no" frameBorder="0"></iframe>
+      </section>
+      <section id="indevelopment">
+        <iframe src="indevelopmentslider.html" width="100%" height="270" scrolling="no" frameBorder="0"></iframe>
+      </section>
+      <iframe src="tokenslider.html" width="100%" height="270" scrolling="no" frameBorder="0"></iframe></section>
+      </center>
+    </header>
+    <!-- Page ContentRaise $1 - $50 Million dollars in cash or 
       crypto-currencies for your movie 
       today! -->
-      <font color="orange"> 
+    <font color="orange">
 
-      
-       
- <section class="section section-inset-1 bg-gray-900">
-          <div class="container">
-             <img src="images/horizontalLogo.png" alt="" >
-             <h3 class="font-weight-normal text"> The Fan 
-                    Owned Interactive Movie Studio </h3> 
-                    <center>
 
-                    
-          
-              
-        </section>
-         
+
+      <section class="section section-inset-1 bg-gray-900">
+        <div class="container c__">
+          <img src="images/horizontalLogo.png" alt="">
+          <h3 class="font-weight-normal text"> The Fan
+            Owned Interactive Movie Studio </h3>
+          <center>
+
+      </section>
+
       </footer>
       <!-- Rd Mailform result field-->
       <div class="rd-mailform-validate"></div>
-    </div>
-    <!-- Global Mailform Output-->
-    <div class="snackbars" id="form-output-global"></div>
-    <!-- Java script-->
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-     
-    
-    
-    <!-- coded by Starlight-->
-  </body>
+  </div>
+  <!-- Global Mailform Output-->
+  <div class="snackbars" id="form-output-global"></div>
+  <!-- Java script-->
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+
+  <!-- coded by Starlight-->
+</body>
+
 </html>

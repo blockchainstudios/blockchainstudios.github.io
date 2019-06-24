@@ -1,0 +1,81 @@
+@media only screen and (max-width: 823px) {
+    /* makeyourmovie */
+
+    .page-content .section.section-inset-1 {
+        padding-top: 0;
+    }
+
+    .page-content .bg-light.section-xl {
+        display: none
+    }
+
+    .page-foot .footer-content .rd-navbar-brand-2 img {
+        width: 80%;
+    }
+
+    .page-foot .footer-content .list-inline a {
+        font-size: 35px;
+    }
+
+    /* 404 */
+    .rd-navbar-inner .rd-navbar-panel .rd-navbar-brand {
+        position: relative;
+    }
+
+    .rd-navbar-fixed .rd-navbar-panel {
+        height: 80px;
+
+    }
+
+    button.rd-navbar-toggle.toggle-original {
+        margin-top: 10px;
+    }
+
+    /* ted */
+    #thumbnail-slider-prev,
+    #thumbnail-slider-next {
+        display: inline !important;
+    }
+
+    .details {
+        width: 75%;
+        padding-left: 0 !important;
+    }
+
+    main.page-content {
+        padding-top: 22px;
+    }
+
+    /* test */
+
+    .img__ {
+        width: 100%;
+        height: unset;
+    }
+
+    /* index */
+
+    .c__ {
+        width: unset !important
+    }
+
+    .container.c,
+    #my-slider {
+        width: unset !important
+    }
+
+    iframe.top {
+        margin-top: 80px;
+        height: 60vw;
+    }
+
+    .img_ {
+        width: 220px !important;
+        margin-left: 15% !important;
+        z-index: 1;
+    }
+
+    .rd-navbar-nav {
+        padding-left: 0 !important;
+    }
+}

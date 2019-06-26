@@ -1,6 +1,17 @@
 @media only screen and (max-width: 823px) {
     /* makeyourmovie */
-
+.home-iframe {
+    
+ 
+}
+iframe {
+    min-width: 100%; 
+    width: 100px;
+    *width: 100%; 
+}
+section {
+    position:relative;
+}
     .page-content .section.section-inset-1 {
         padding-top: 0;
     }

@@ -1,0 +1,9 @@
+[25-Jun-2019 17:29:51 UTC] PHP Fatal error:  Uncaught Kreait\Firebase\Exception\InvalidArgumentException: /home/amplewebsites/public_html/blockchainmobile/google-service-account.json can not be read: SplFileObject::__construct(/home/amplewebsites/public_html/blockchainmobile/google-service-account.json): failed to open stream: No such file or directory in /home/amplewebsites/public_html/blockchainmobile/vendor/kreait/firebase-php/src/Firebase/ServiceAccount.php:161
+Stack trace:
+#0 /home/amplewebsites/public_html/blockchainmobile/increment.php(10): Kreait\Firebase\ServiceAccount::fromJsonFile('/home/amplewebs...')
+#1 {main}
+  thrown in /home/amplewebsites/public_html/blockchainmobile/vendor/kreait/firebase-php/src/Firebase/ServiceAccount.php on line 161
+[26-Jun-2019 05:38:43 UTC] PHP Warning:  include(inproduction.php): failed to open stream: No such file or directory in /home/amplewebsites/public_html/blockchainmobile/index.php on line 57
+[26-Jun-2019 05:38:43 UTC] PHP Warning:  include(): Failed opening 'inproduction.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/amplewebsites/public_html/blockchainmobile/index.php on line 57
+[26-Jun-2019 05:39:40 UTC] PHP Warning:  include(inproduction.php): failed to open stream: No such file or directory in /home/amplewebsites/public_html/blockchainmobile/index.php on line 57
+[26-Jun-2019 05:39:40 UTC] PHP Warning:  include(): Failed opening 'inproduction.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/amplewebsites/public_html/blockchainmobile/index.php on line 57

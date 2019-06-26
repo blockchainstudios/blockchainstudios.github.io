@@ -65,7 +65,6 @@
     }
 
     iframe.top {
-        margin-top: 80px;
         height: 60vw;
     }
 
@@ -78,4 +77,98 @@
     .rd-navbar-nav {
         padding-left: 0 !important;
     }
+
+    .ism-caption {
+        top: unset !important;
+        bottom: 0 !important
+    }
+
+
+    .rd-navbar-fixed .rd-navbar-brand {
+        left: 0px;
+        margin: 0 auto;
+    }
+
+    /* main */
+
+    .over_ {
+        width: 90vw;
+        padding-left: 13vw;
+    }
+
+    .over__ {
+        width: 110vw;
+        padding-left: 20%;
+    }
+
+    .video-box-overlay img {
+        width: 70%;
+    }
+
+    .owl-item blockquote {
+        text-align: center
+    }
+
+    .page-foot.bg-gray-900 {
+        text-align: center
+    }
+
+    body {
+        overflow-x: hidden
+    }
+
+    /* french streaming */
+
+
+    .container.french {
+        margin-top: 100px;
+        width: 70%;
+    }
+
+    .container.french h1 {
+        font-size: 2em;
+    }
+
+    .container.french h2 {
+        font-size: 1.5em;
+    }
+
+    .rd-navbar-search,
+    .fa-shopping-cart {
+        display: none !important;
+    }
+
+    .row-45 {
+        margin-bottom: 0 !important;
+    }
+
+    .page-content.four {
+        padding: 0 !important;
+    }
+    .logo-block {
+        margin:0 auto;
+    }
+}
+
+.money-button iframe {
+    width: 170px !important;
+}
+
+.container.french img {
+    margin-top: 20px;
+}
+
+#mySidenav a {
+    color: white;
+}
+
+/* counter */
+
+#counter {
+    color: white;
+    padding: 10px 0;
+}
+
+.page {
+    padding-top: 56px;
 }

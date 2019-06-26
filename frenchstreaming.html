@@ -4,11 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>MyMovies</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://metaflix.icu/css/style.css">
-  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <!-- <link rel="stylesheet" href="https://metaflix.icu/css/style.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link href="https://vjs.zencdn.net/7.1.0/video-js.css" rel="stylesheet" />
   <script src="https://vjs.zencdn.net/7.1.0/video.min.js"></script>
@@ -17,13 +20,13 @@
   <style>
     /* Paywall css The CSS you'll need in your website */
     #unlockable {
-      visibility: hidden;
+      display: none;
       opacity: 0;
       transition: opacity 5s;
     }
 
     #unlockable.unlocked {
-      visibility: visible;
+      display: inline;
       opacity: 1;
     }
   </style>
@@ -59,20 +62,66 @@
 
 </head>
 
-<body>
-  <header>
-  </header>
-  <div class="container">
-    <section id="row1">
-      <h1 class="sectionTitle">Swipe and Watch: My White Husband</h1>
-      <h2>My White Husband (Director Linda Menfo) [1 hour 12 minutes] (French)</h2>
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Movie 1</a>
+<body style="width:100%;background:#000000;color:white;text-align: center">
+  <nav style="background: #151515" class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+    data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-static"
+    data-xxl-layout="rd-navbar-static" data-device-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed"
+    data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static"
+    data-xxl-device-layout="rd-navbar-static" data-stick-up-offset="100px">
+    <div class="rd-navbar-inner">
+      <!-- RD Navbar Panel-->
+      <div class="rd-navbar-panel">
+        <!-- RD Navbar Toggle-->
+        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+          type="submit"><span></span></button>
+        <img class="img_" src="images/logo-default.png" alt="" style="width:280px; margin-left:100px">
+
+        <!-- RD Navbar Brand-->
+        <div class="rd-navbar-brand">
+
+          <a class="brand-name" href="index.html">
+          </a></div>
       </div>
-      <br>
-      <div class="examples">
-        <!-- Money Button -->
+
+      <div class="rd-navbar-nav-wrap">
+        <!-- RD Navbar Search-->
+
+
+        <!-- RD Navbar Nav-->
+        <ul class="rd-navbar-nav" style="padding-left: 200px">
+          <li><a onclick="closeMe()" href="index.html">Home</a></li>
+          <li><a onclick="closeMe()" href="index.html#now">Now Streaming</a>
+
+          </li>
+          <li><a onclick="closeMe()" href="index.html#inproduction">In Production</a>
+
+          <li><a onclick="closeMe()" href="index.html#indevelopment">In Development</a>
+
+          </li>
+
+          <li><a onclick="closeMe()" class="active" href="ted.html">Filmmakers</a></li>
+          <li><a onclick="closeMe()" href="main.html">About</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="container french">
+    <div class="row justify-content-center">
+      <h1 class="sectionTitle">Swipe and Watch: My White Husband</h1>
+    </div>
+    <div class="row justify-content-center text-center">
+      <h2>My White Husband (Director Linda Menfo) [1 hour 12 minutes] (French)</h2>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Movie 1</a>
+    </div>
+    <br>
+    <div class="examples">
+      <!-- Money Button -->
+      <div class="row justify-content-center">
         <div class='money-button' data-outputs='[
           {
             "userId": "2677",
@@ -82,30 +131,53 @@
         ]' data-label="Unlock" data-client-identifier="066f434d69de9157a398c978054e9185"
           data-button-id="1ANpLsyPZj5wp8sr3Dt4rdpYHPvsNQLegu" data-button-data="{}" data-type="buy"
           data-on-payment="handleSuccessfulPayment" data-on-error="handleFailedPayment" data-dev-mode="false"></div>
-        <p>
-          <img src="MWH.jpg" alt="" />
-          <!-- Hidden content -->
-          <div id="unlockable">
-            <div style="display: block;background-color: #000000; auto;margin-center">
-              <video id="videojs-mux-player" class="video-js" controls preload="auto" width="1270" height="720"
-                data-setup="{}">
-                <source src="mwh.m3u8" type="application/x-mpegURL" />
-              </video>
-            </div>
-          </div>
-
-        </p>
       </div>
+      <div class="row justify-content-center">
 
-
-
-      <script src="https://bico.media/b://9949020cfeae6551830978705b63152efb282adc3a6e79bbb6af13ba36d20900.js"></script>
-
+        <img class="img-fluid" src="MWH.jpg" alt="" />
+      </div>
+      <!-- Hidden content -->
+      <div id="unlockable">
+        <div style="display: block;background-color: #000000;">
+          <video id="videojs-mux-player" class="video-js" controls preload="auto" width="1270" height="720"
+            data-setup="{}">
+            <source src="mwh.m3u8" type="application/x-mpegURL" />
+          </video>
+        </div>
+      </div>
+    </div>
   </div>
+  <!-- Page Footer-->
+  <footer class="page-foot bg-gray-900">
+    <section class="footer-content">
+      <div class="container">
+        <div class="rd-navbar-brand-2"><a class="brand-name" href="index.html"><img src="images/logo-default.png"
+              alt=""></a></div>
+
+      </div>
+    </section>
+    <section class="footer-copyright-1 copyright">
+      <div class="container">
+        <!-- Rights-->
+        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All
+            Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none" /><a href="terms.html">Terms of
+            Use.</a><span> Design&nbsp;by&nbsp;<a href="https://zemez.io/">MyMovies.Us</a></span></p>
+      </div>
+    </section>
+  </footer>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://bico.media/b://9949020cfeae6551830978705b63152efb282adc3a6e79bbb6af13ba36d20900.js"></script>
+
 
   <!-- Money Button script -->
   <script src="https://www.moneybutton.com/moneybutton.js"></script>
 
 </body>
+<script>
+  function closeMe() {
+    $(".rd-navbar-toggle").trigger('click');
+  }
+</script>
 
 </html>

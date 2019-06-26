@@ -1,4 +1,9 @@
-#AuthType Basic
-#AuthName "Give Me a Password To Enter"
-#AuthUserFile "/home/amplewebsites/.htpasswds/public_html/block_chain_studios/passwd"
-#require valid-user
+AuthType Basic
+AuthName "Give Me a Password To Enter"
+AuthUserFile "/home/amplewebsites/.htpasswds/public_html/block_chain_studios/passwd"
+require valid-user
+
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

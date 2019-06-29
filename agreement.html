@@ -1,0 +1,84 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<!-- center -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://api.moneybutton.com/moneybutton.js"></script>
+     
+	   <center> <h1>My Movies Actor Offer Letter </h1></center>
+    <iframe src="eryn_rea_moneybutton.pdf" width="100%" height="500px">
+		
+    </iframe>
+    <br>
+    <br>
+    <br>
+      <div class="txlink"><strong>Swiping the Moneybutton below constitutes your acceptance of above terms.</strong> 
+			  
+			  <div class="money-button" 
+				   data-to="16nmQkZapG6R9NyyQ8Y6pd9cj1s185HGLF" 
+				   data-amount="1710" 
+				   data-currency="USD" 
+				   data-label="Sign" 
+				   data-hide-amount="false" 
+				   data-client-identifier="066f434d69de9157a398c978054e9185" 
+				   data-button-id="1554147627294" 
+				   data-button-data="music"
+              	data-op-return="I am the PRODUCER (‘‘Producer’’) in regard to the upcoming production ‘‘Lord Timmy & The Mystery of the Last Master’’ (‘‘Picture’’). I would like to employ Eryn Rea (‘‘Artist’’) for a two (2) week (e.g., six (6) day weeks) shoot on or about the dates of July 13, 2019 and July 29, 2019.
+Artist would be playing the role of Dr. Jenna De La Salle. The shooting will take place in Santa Cruz, CA & Mt. Shasta, CA. Teodoro Rivera will direct. The Picture’s budget shall be between $20,000 to $250,000 depending on the final BitcoinSV copyright crowdsale balance.
+Fixed Compensation: Producer offers to pay a flat fee of $1,710 in Bitcoin BSV plus 5% of the U.S. Copyright for Lord Timmy & the Mystery of the Last Master for Artist’s services. Upon acceptance of this offer, via Money Button swipe, a $1,710 Per Diem and Wardrobe/Make-Up Rental in BSV plus 5% of the Picture's Copyright (# 3-962-455) would become payable on a pay-or-play basis.
+Deferred Compensation: In addition to the Fixed Compensation set forth above, subject to the production and release of the Picture and subject to the performance of all material obligations of Artist hereunder, Artist shall be entitled to receive for Artist’s services the sum of $125 US Dollars per day, payable in Bitcoin BSV which shall be deferred and paid pro rata with all similar first priority deferments within thirty days of completion of filming, plus, 2% of Copyright and Producer Credit. Artist’s deferment shall be defined on a favored nation’s basis with other cast members and computed as follows: An amount payable out of Producer’s gross receipts from the Exhibition of the Picture.
+Grant of Rights : Producer shall have the worldwide right to use and to license the use of Artist’s name, sobriquet, photograph, likeness, voice and/or caricature and shall have the right to simulate Artist’s voice, signature and appearance by any means in and in connection with the Picture and the advertising, publicizing,
+exhibition, and/or other exploitation thereof in any manner and by any means and in connection with commercial advertising and publicity tie-ups.
+Producer shall own all results and proceeds of Artist’s services hereunder, including the copyrights thereof, and as such owner shall have the right (among all other rights of ownership): (i) to include such results and proceeds in the Picture and in advertising and publicity relating to the Picture, (ii) to reproduce such results and proceeds by any present or future means, (iii) to combine such results and proceeds with photographs and recordings made by others for use in the Picture, (iv) to exhibit and perform such results and proceeds in theaters, on the radio and television, and in or by any other present or future media, for profit and otherwise, and for commercial or non- commercial purposes and purposes of trade, and (v) to license and assign its rights to any other person or company. The results and proceeds of Artist’s services include any and all material, words, writings, ideas, ‘‘gags,’’ dialogue, melody and lyrics composed, submitted or interpolated by Artist in connection with the preparation or production
+of the Picture. Artist hereby expressly waives and relinquishes any moral rights or ‘‘droit morale’’ in and to any material created by or contributed to the Picture by Artist including all of Artist’s performance.
+Producer shall have the exclusive right and license, but only in connection with Artist’s participation as JENNA DE LA SALLE (Role) in the to use and to license the use of Artist’s name, sobriquet, photograph, likeness, caricature and/or signature (collectively referred to herein as ‘‘name and likeness’’) in and in connection with any merchandising and/or publishing undertakings
+
+" 
+				   data-type="buy"></div><br>
+              <div class="txlink"><strong>Receipt:</strong> <a href="https://whatsonchain.com/tx/{$tx}" target="_new"></a>   </div>
+          
+
+
+			
+        
+    
+   <br>
+    
+  <script>
+    (function($, w) {
+      "use strict";
+      // $().ready(function(){
+      $(".txlink").each(function(i, v) {
+        var $v = $(v);
+        var fname = "_txlink" + i;
+        var href = decodeURIComponent($v.find("a").prop("href"));
+        w[fname] = function(payment) {
+          $v.find("a")
+            .fadeOut().fadeIn().fadeOut().fadeIn()
+            .text("Click me to view the transaction reciept!")
+            .prop("href", href.replace(/[{][$]tx[}]/, payment.txid));
+          console.log(payment.txid);
+        };
+        $v.siblings(".money-button").attr('data-on-payment', fname);
+        console.log(i, $v, href);
+      });
+      // });
+    })(jQuery||$, window);
+
+  </script>
+  
+  <br>
+  
+ 
+
+  
+ </body>
+</html>
+
+ 

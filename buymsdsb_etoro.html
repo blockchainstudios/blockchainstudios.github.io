@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>MyMovies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://vjs.zencdn.net/7.1.0/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/7.1.0/video.min.js"></script>
+  <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+  
+  <style>
+   
+    /* Paywall css The CSS you'll need in your website */
+    #unlockable {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 5s;
+    }
+    #unlockable.unlocked {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+  <script>
+    /* Paywall javascript The Javascript you'll need in your website */
+    function handleSuccessfulPayment (payment) {
+      unlockContent();
+    }
+    function handleFailedPayment (error) {
+      alert("Sorry, the payment did not process correctly.")
+    }
+    function unlockContent () {
+      document.getElementById("unlockable").classList.toggle("unlocked");
+    }
+  </script>
+	
+ <script>	
+	   /* pop up share script */
+	$(window).load(function () {
+    $(".trigger_popup_fricc").click(function(){
+       $('.hover_bkgr_fricc').show();
+    });
+    $('.hover_bkgr_fricc').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+});
+  </script>
+  
+</head>
+
+<body>
+<center>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+<header>
+ </header>
+ <div class="container">
+
+   <section id="row1">
+     <h1 class="sectionTitle">Swipe and See: Magic Square eToro Story Board</h1>
+	    
+      <div id="mySidenav" class="sidenav">
+    
+</div>
+  <br>
+<div class="examples">
+ <!-- Money Button --> 
+	<div class='money-button'
+  data-outputs='[
+    {
+      "userId": "3259",
+      "amount": "0.01",
+      "currency": "USD"
+    }
+  ]'
+  data-label="Unlock"
+  data-client-identifier="066f434d69de9157a398c978054e9185"
+  data-button-id="1ANpLsyPZj5wp8sr3Dt4rdpYHPvsNQLegu"
+  data-button-data="{}"
+  data-type="buy"
+  data-on-payment="handleSuccessfulPayment"
+  data-on-error="handleFailedPayment"
+  data-dev-mode="false"
+></div> 
+	
+	
+	
+ <!-- Hidden content -->
+<div id="unlockable">
+  
+     <div
+    style="display: block;background-color: #000000; auto;margin-center">
+     <img src="https://bico.media/198pyJV7odubXZyrV662upYUZm1x1fp9b5/sq.jpg" width="100%" height="90%">
+		
+   </div>
+       
+      </ul>
+
+   </div>
+	   
+  </div>
+</div>
+  
+  
+
+    <script  src="https://bico.media/b://9949020cfeae6551830978705b63152efb282adc3a6e79bbb6af13ba36d20900.js"></script>
+
+</div>
+
+<!-- Money Button script -->
+<script src="https://www.moneybutton.com/moneybutton.js"></script>
+
+</center>
+</body>
+
+</html>

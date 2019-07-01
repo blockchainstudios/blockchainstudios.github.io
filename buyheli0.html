@@ -27,8 +27,11 @@
     buttonData: "{}",
     type: "tip",
     onPayment: function (arg) { console.log('onPayment', arg);
-    window.location.href = "https://bico.media/06c24e90115f2327d4171f42bf74915d9cd3770d6889d2f80f8fab8013b4a506.jpg";
-  },
+		window.open(
+  'https://bico.media/06c24e90115f2327d4171f42bf74915d9cd3770d6889d2f80f8fab8013b4a506.jpg',
+  '_blank' // <- This is what makes it open in a new window.
+);
+   },
     onError: function (arg) { console.log('onError', arg) }
   })
 </script>

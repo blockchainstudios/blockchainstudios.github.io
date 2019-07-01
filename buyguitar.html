@@ -27,8 +27,11 @@
     buttonData: "{}",
     type: "tip",
     onPayment: function (arg) { console.log('onPayment', arg);
-    window.location.href = "https://www.youtube.com/embed/OHSpYmgKTaU";
-  },
+		window.open(
+  'https://www.youtube.com/embed/OHSpYmgKTaU',
+  '_blank' // <- This is what makes it open in a new window.
+);
+   },
     onError: function (arg) { console.log('onError', arg) }
   })
 </script>

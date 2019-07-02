@@ -20,6 +20,7 @@
   <link href="thumbnail-slider.css" rel="stylesheet" />
   <script src="thumbnail-slider.js" type="text/javascript"></script>
   <link href="thumbs2.css" rel="stylesheet" />
+  <script src="https://www.moneybutton.com/moneybutton.js"></script>
 
   <!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -164,7 +165,7 @@
 
             </li>
 
-            <li><a onclick="closeMe()" class="active" href="ted.html">Filmmakers</a></li>
+            <li><a onclick="closeMe()" class="active" href="ted.php">Filmmakers</a></li>
             <li><a onclick="closeMe()" href="main.html">About</a></li>
           </ul>
         </div>
@@ -187,11 +188,20 @@
                   <br>
                   <br>
 
-                   
+
                 </div>
-                <div class="media-body" style="margin-top:-80px" >
+                <div class="media-body" style="margin-top:-80px">
                   <h6><a href="team-member.html">Bio</a></h6><span class="text-gray"></span>
-                  <p style ="font-size:10px">Ted Rivera is an award winning filmmaker with over twenty-five years of production and development experience. His student film, the feature length The Night of the Chupacabra, received first prize awards at the North American Science Fiction Film Festival, The Palm Springs International Film Festival, and the Berkeley Latino Film Festival. Rivera, a Roger Corman trained producer, has been developing screenplays for the last fifteen years and his current slate of films at different budgets and genres. His first Producing assignment was Dinocroc, the Sci-Fi Channel breakout smash hit. As Co-Producer and assistant to Roger Corman's Head of Production, Rivera was responsible for the breakdown, schedule, and budget of the $1,000,000 film. Prior to making low budget films, Rivera was a development assistant to Academy Award Nominee Alexandra Rose and Academy Award Winner, Jana Sue Memel.</p>
+                  <p style="font-size:10px">Ted Rivera is an award winning filmmaker with over twenty-five years of
+                    production and development experience. His student film, the feature length The Night of the
+                    Chupacabra, received first prize awards at the North American Science Fiction Film Festival, The
+                    Palm Springs International Film Festival, and the Berkeley Latino Film Festival. Rivera, a Roger
+                    Corman trained producer, has been developing screenplays for the last fifteen years and his current
+                    slate of films at different budgets and genres. His first Producing assignment was Dinocroc, the
+                    Sci-Fi Channel breakout smash hit. As Co-Producer and assistant to Roger Corman's Head of
+                    Production, Rivera was responsible for the breakdown, schedule, and budget of the $1,000,000 film.
+                    Prior to making low budget films, Rivera was a development assistant to Academy Award Nominee
+                    Alexandra Rose and Academy Award Winner, Jana Sue Memel.</p>
                 </div>
 
               </div>
@@ -250,7 +260,7 @@
     <img class="#" src="posterImages/1.png " alt=""/ width="800">
     <br>
     <br>
-  <!--  <h4>Synopsis: Dolor sit amet consectetur <br>adipiscing elit duis tristique sollicitudin. <br>Dolor sit amet
+    <!--  <h4>Synopsis: Dolor sit amet consectetur <br>adipiscing elit duis tristique sollicitudin. <br>Dolor sit amet
       consectetur adipiscing elit duis<br> tristique sollicitudin.<br> </h4> -->
 
 
@@ -313,65 +323,72 @@
   <span class="dot"></span> 
 </div> -->
     <br>
-  
-
-<a href = "https://bico.media/198pyJV7odubXZyrV662upYUZm1x1fp9b5/purchase_terms.pdf"><h2>Purchase Terms</h2></a>
-  <br>
-    <br>  <br>
+      <section id="money">
+      <center>
+    <a href="https://bico.media/198pyJV7odubXZyrV662upYUZm1x1fp9b5/purchase_terms.pdf">
+      <h2>Purchase Terms</h2>
+    </a>
+    <h3>$<span class="value">0</span></h3>
+    <br>
+    <br> <br>
     <br>
     <h4>Fan($20/250,000)</h4>
     <h6>Stream Movie
-Social Media <br><br>Updates/Activity<br><br>
-1 Exhibition Vote
-</h6>
-    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; <iframe
-      src="$20.html" frameborder=0></iframe>
-	
+      Social Media <br><br>Updates/Activity<br><br>
+      1 Exhibition Vote
+    </h6>
+    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; 
+    <?php include("$20.html"); ?>
+    <!-- <iframe
+      src="$20.html" frameborder=0></iframe> -->
+
 
     <h4> Associate Producer ($100/250,000)</h4>
     <h6>Stream Movie<br><br>
-Social Media Updates/Activity<br><br>
-Limited Zoom Conference Attendance<br><br>
-10 Exhibition Votes<br><br>
-</h6>
-    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; <iframe
-      src="$100.html" frameborder=0></iframe>
+      Social Media Updates/Activity<br><br>
+      Limited Zoom Conference Attendance<br><br>
+      10 Exhibition Votes<br><br>
+    </h6>
+    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; 
+    <?php include("$100.html"); ?>
     <h4>Co-Producer ($1000/250,000)</h4>
     <h6>Stream Movie<br><br>
-Social Media Updates/Activity<br><br>
-Unlimited Zoom Conference Attendance<br><br>
-1 Lord Timmy  Crew T-Shirt and Hoodie<br><br>
-Lord Timmy Guitar Raffle Entry<br><br>
-100 Exhibition Votes</h6>
-    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; <iframe
-      src="$1000.html" frameborder=0></iframe>
-      
+      Social Media Updates/Activity<br><br>
+      Unlimited Zoom Conference Attendance<br><br>
+      1 Lord Timmy Crew T-Shirt and Hoodie<br><br>
+      Lord Timmy Guitar Raffle Entry<br><br>
+      100 Exhibition Votes</h6>
+    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; 
+    <?php include("$1000.html"); ?>
+
     <h4>Executive Producer($10,000/250,000)</h4>
-    <h6> 
-Stream Movie<br><br>
-Social Media Updates/Activity<br><br>
-Unlimited Zoom Conference Attendance<br><br>
-2 Lord Timmy  Crew T-Shirts and Hoodies<br><br>
-Lord Timmy Guitar Replica<br><br>
-100 Exhibition Votes<br><br>
-One Set Visit for 2<br><br>
-Role as Extras</h6>
-    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; <iframe
-      src="$10000.html" frameborder=0></iframe>
-      
+    <h6>
+      Stream Movie<br><br>
+      Social Media Updates/Activity<br><br>
+      Unlimited Zoom Conference Attendance<br><br>
+      2 Lord Timmy Crew T-Shirts and Hoodies<br><br>
+      Lord Timmy Guitar Replica<br><br>
+      100 Exhibition Votes<br><br>
+      One Set Visit for 2<br><br>
+      Role as Extras</h6>
+    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; 
+    <?php include("$10000.html"); ?>
+
     <h4>Patron($100,000/250,000)</h4>
     <h6>Stream Movie<br><br>
-Social Media Updates/Activity<br><br>
-Unlimited Zoom Conference Attendance<br><br>
-4 Lord Timmy Crew T-Shirts & Hoodies<br><br>
-Lord Timmy Guitar<br><br>
-5,000 Exhibition Votes<br><br>
-One Set Visit for 8<br><br>
-1 One liner and Roles as Extras</h6>
-    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; <iframe
-      src="$100000.html" frameborder=0></iframe>
-    
+      Social Media Updates/Activity<br><br>
+      Unlimited Zoom Conference Attendance<br><br>
+      4 Lord Timmy Crew T-Shirts & Hoodies<br><br>
+      Lord Timmy Guitar<br><br>
+      5,000 Exhibition Votes<br><br>
+      One Set Visit for 8<br><br>
+      1 One liner and Roles as Extras</h6>
+    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; 
+    <?php include("$100000.html"); ?>
+    </center>
+    </section>
     <br>
+    <h3>$<span class="value">0</span></h3>
     <br>
     <br>
 
@@ -404,10 +421,10 @@ One Set Visit for 8<br><br>
     <footer class="page-foot bg-gray-900">
       <section class="footer-content">
         <div class="container">
-          <div class="rd-navbar-brand-2"><a class="brand-name" href="index.html"><img src="images/logo-default.png"
-                alt=""></a></div>
+          <div class="rd-navbar-brand-2"><a class="brand-name" href="index.html"><img src="images/logo-default.png"></a></div>
 
         </div>
+
       </section>
       <section class="footer-copyright-1 copyright">
         <div class="container">
@@ -424,6 +441,9 @@ One Set Visit for 8<br><br>
     <!-- Java script-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
+    <script src="js/firebase.js"></script>
     <!-- coded by Starlight-->
 </body>
 <script>

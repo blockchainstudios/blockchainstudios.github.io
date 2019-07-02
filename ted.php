@@ -146,7 +146,7 @@
           <!-- RD Navbar Toggle-->
           <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"
             type="submit"><span></span></button>
-          <img class="img_" src="images/logo-default.png" alt="" style="width:100px; margin-left:100px">
+          <img class="img_" src="images/logo-default.png" alt="" style="width:100px; margin-left:100px;object-fit: contain">
         </div>
 
         <div class="rd-navbar-nav-wrap">
@@ -173,10 +173,11 @@
       </div>
     </nav>
     <main class="page-content">
-
+ 
+ 
       <section class="section section-inset-1">
         <div class="container">
-          <h2>Teodora Rivera, III</h2>
+          <h2>Teodoro Rivera, III</h2>
           <h3>Writer, Producer, Director</h3>
 
           <hr>
@@ -185,6 +186,7 @@
             <div class="col-12 col-xl-6" width="800px">
               <div class="media flex-column flex-md-row bg-default media-mod-2">
                 <div class="media-left"><img class="#" src="ted.jpeg" alt="" />
+                <div class="media-bottom">ted@mymovies.us</div>
                   <br>
                   <br>
 
@@ -257,8 +259,10 @@
     <h2>In Production</h2>
     <br>
     <br>
-    <img class="#" src="posterImages/1.png " alt=""/ width="800">
-    <br>
+    
+        <img class="#" src="posterImages/1.png " alt=""/ width="800">
+
+     <br>
     <br>
     <!--  <h4>Synopsis: Dolor sit amet consectetur <br>adipiscing elit duis tristique sollicitudin. <br>Dolor sit amet
       consectetur adipiscing elit duis<br> tristique sollicitudin.<br> </h4> -->
@@ -267,7 +271,7 @@
     <br>
     <br>
     <br>
-    <div class="details text-center" align="justify" style="padding-left:0%">
+    <div class="details" align="center" >
       <h4>
         Budget: 250-2500 BSV</h4>
       <h4>
@@ -323,6 +327,7 @@
   <span class="dot"></span> 
 </div> -->
     <br>
+<<<<<<< HEAD:ted.php
       <section id="money">
       <center>
     <a href="https://bico.media/198pyJV7odubXZyrV662upYUZm1x1fp9b5/purchase_terms.pdf">
@@ -331,8 +336,69 @@
     <h3>$<span class="value">0</span></h3>
     <br>
     <br> <br>
+=======
+  
+
+
+  <br>
+    <br>  <br>
+    <h1>Micro Payments</h1>
     <br>
+    <br>
+>>>>>>> 9768b2fb66baf11bcbe4d0fd99179411cbef694f:ted.html
+    <br>
+
+     <h3 style="font-size:34px">Story</h3>
+		 <h6>First 12 Pages</h6> 
+
+		<iframe
+      src="buyscript.html" frameborder=0></iframe>
+		    <br>   
+
+     <h3 style="font-size:34px">FX</h3>
+         <h6>Magic Square Director Story Board</h6> 
+         <iframe
+      src="buymsdsb.html" frameborder=0></iframe>
+          <h6>Magic Square eToro Story Board</h6> 
+         <iframe
+      src="buymsdsb_etoro.html" frameborder=0></iframe>
+    <br>   
+
+     <h3 style="font-size:34px">Production</h3>
+     	 	<h6>Shasta Air - Robinson R-44</h6> 
+     	<iframe
+      src="buyshastaair.html" frameborder=0></iframe>
+     	 	<h6>Helicopter Quote - Air Shasta</h6> 
+     	<iframe
+      src="buyshastaquote.html" frameborder=0></iframe>
+     	 	<h6>Workman’s comp quote</h6> 
+     	<iframe
+      src="buytalentfundquote.html" frameborder=0></iframe>
+		<h6>Helicopter Landing Storyboard 0</h6>
+		<iframe
+      src="buyheli0.html" frameborder=0></iframe>
+		 <h6>Helicopter Landing Storyboard 1</h6></a>
+		 <iframe
+      src="buyheli1.html" frameborder=0></iframe>
+		 <h6>Helicopter Landing Storyboard 2</h6> 
+		 <iframe
+      src="buyheli2.html" frameborder=0></iframe>
+		 <h6>Helicopter Landing Storyboard 3</h6>
+		 <iframe
+      src="buyheli3.html" frameborder=0></iframe>
+		 <h6>Helicopter Landing Storyboard 4</h6>
+		 <iframe
+      src="buyheli4.html" frameborder=0></iframe>
+		 
+    <br>  <br>
+<a href = "https://bico.media/198pyJV7odubXZyrV662upYUZm1x1fp9b5/purchase_terms.pdf"><h2>Purchase Terms</h2></a>
+    		 		  <a href = "polx.html">Pay with Poloniex</a>  
+
+<p style="font-size:10px">Click here to read the finance, production, and exhibition plan for Lord Timmy & the Mystery of the Last Master</p>
+    <br>  <br>
+
     <h4>Fan($20/250,000)</h4>
+<<<<<<< HEAD:ted.php
     <h6>Stream Movie
       Social Media <br><br>Updates/Activity<br><br>
       1 Exhibition Vote
@@ -374,6 +440,47 @@
     &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; 
     <?php include("$10000.html"); ?>
 
+=======
+    <h6>Stream Movie <br><br>
+Social Media Updates/Activity<br><br>
+1 Exhibition Vote
+</h6>
+    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; <iframe
+      src="$20.html" frameborder=0></iframe>
+	
+
+    <h4> Associate Producer ($100/250,000)</h4>
+    <h6>Stream Movie<br><br>
+Social Media Updates/Activity<br><br>
+Limited Zoom Conference Attendance<br><br>
+5 Exhibition Votes<br><br>
+</h6>
+    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; <iframe
+      src="$100.html" frameborder=0></iframe>
+    <h4>Co-Producer ($1000/250,000)</h4>
+    <h6>Stream Movie<br><br>
+Social Media Updates/Activity<br><br>
+Unlimited Zoom Conference Attendance<br><br>
+1 Lord Timmy  Crew T-Shirt and Hoodie<br><br>
+Lord Timmy Guitar Raffle Entry<br><br>
+50 Exhibition Votes</h6>
+    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; <iframe
+      src="$1000.html" frameborder=0></iframe>
+      
+    <h4>Executive Producer($10,000/250,000)</h4>
+    <h6> 
+Stream Movie<br><br>
+Social Media Updates/Activity<br><br>
+Unlimited Zoom Conference Attendance<br><br>
+2 Lord Timmy Crew T-Shirts and Hoodies<br><br>
+Lord Timmy Guitar Replica<br><br>
+500 Exhibition Votes<br><br>
+One Set Visit for 2<br><br>
+Role as Extras</h6>
+    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; <iframe
+      src="$10000.html" frameborder=0></iframe>
+      
+>>>>>>> 9768b2fb66baf11bcbe4d0fd99179411cbef694f:ted.html
     <h4>Patron($100,000/250,000)</h4>
     <h6>Stream Movie<br><br>
       Social Media Updates/Activity<br><br>
@@ -421,7 +528,12 @@
     <footer class="page-foot bg-gray-900">
       <section class="footer-content">
         <div class="container">
+<<<<<<< HEAD:ted.php
           <div class="rd-navbar-brand-2"><a class="brand-name" href="index.html"><img src="images/logo-default.png"></a></div>
+=======
+          <div class="rd-navbar-brand-2"><a class="brand-name" href="index.html"><img src="images/logo-default.png"
+                alt="" style="width:100px;right:100px;object-fit: contain"></a></div>
+>>>>>>> 9768b2fb66baf11bcbe4d0fd99179411cbef694f:ted.html
 
         </div>
 

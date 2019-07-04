@@ -327,8 +327,7 @@
   <span class="dot"></span> 
 </div> -->
     <br>
-<<<<<<< HEAD:ted.php
-      <section id="money">
+       <section id="money">
       <center>
     <a href="https://bico.media/198pyJV7odubXZyrV662upYUZm1x1fp9b5/purchase_terms.pdf">
       <h2>Purchase Terms</h2>
@@ -336,8 +335,7 @@
     <h3>$<span class="value">0</span></h3>
     <br>
     <br> <br>
-=======
-  
+   
 
 
   <br>
@@ -345,8 +343,7 @@
     <h1>Micro Payments</h1>
     <br>
     <br>
->>>>>>> 9768b2fb66baf11bcbe4d0fd99179411cbef694f:ted.html
-    <br>
+     <br>
 
      <h3 style="font-size:34px">Story</h3>
 		 <h6>First 12 Pages</h6> 
@@ -528,13 +525,10 @@ Role as Extras</h6>
     <footer class="page-foot bg-gray-900">
       <section class="footer-content">
         <div class="container">
-<<<<<<< HEAD:ted.php
-          <div class="rd-navbar-brand-2"><a class="brand-name" href="index.html"><img src="images/logo-default.png"></a></div>
-=======
-          <div class="rd-navbar-brand-2"><a class="brand-name" href="index.html"><img src="images/logo-default.png"
+           <div class="rd-navbar-brand-2"><a class="brand-name" href="index.html"><img src="images/logo-default.png"></a></div>
+           <div class="rd-navbar-brand-2"><a class="brand-name" href="index.html"><img src="images/logo-default.png"
                 alt="" style="width:100px;right:100px;object-fit: contain"></a></div>
->>>>>>> 9768b2fb66baf11bcbe4d0fd99179411cbef694f:ted.html
-
+ 
         </div>
 
       </section>

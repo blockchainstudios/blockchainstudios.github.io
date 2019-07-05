@@ -8,6 +8,7 @@ firebase.initializeApp({
     appId: "1:60099081581:web:1f8c90c1c14c3d75"
 });
 
+
 var db = firebase.firestore();
 var count = 0;
 

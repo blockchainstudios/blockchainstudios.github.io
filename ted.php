@@ -327,7 +327,6 @@
   <span class="dot"></span> 
 </div> -->
     <br>
-<<<<<<< HEAD:ted.php
       <section id="money">
       <center>
     <a href="https://bico.media/198pyJV7odubXZyrV662upYUZm1x1fp9b5/purchase_terms.pdf">
@@ -336,16 +335,6 @@
     <h3>$<span class="value">0</span></h3>
     <br>
     <br> <br>
-=======
-  
-
-
-  <br>
-    <br>  <br>
-    <h1>Micro Payments</h1>
-    <br>
-    <br>
->>>>>>> 9768b2fb66baf11bcbe4d0fd99179411cbef694f:ted.html
     <br>
 
      <h3 style="font-size:34px">Story</h3>
@@ -398,7 +387,6 @@
     <br>  <br>
 
     <h4>Fan($20/250,000)</h4>
-<<<<<<< HEAD:ted.php
     <h6>Stream Movie
       Social Media <br><br>Updates/Activity<br><br>
       1 Exhibition Vote
@@ -440,47 +428,6 @@
     &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; 
     <?php include("$10000.html"); ?>
 
-=======
-    <h6>Stream Movie <br><br>
-Social Media Updates/Activity<br><br>
-1 Exhibition Vote
-</h6>
-    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; <iframe
-      src="$20.html" frameborder=0></iframe>
-	
-
-    <h4> Associate Producer ($100/250,000)</h4>
-    <h6>Stream Movie<br><br>
-Social Media Updates/Activity<br><br>
-Limited Zoom Conference Attendance<br><br>
-5 Exhibition Votes<br><br>
-</h6>
-    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; <iframe
-      src="$100.html" frameborder=0></iframe>
-    <h4>Co-Producer ($1000/250,000)</h4>
-    <h6>Stream Movie<br><br>
-Social Media Updates/Activity<br><br>
-Unlimited Zoom Conference Attendance<br><br>
-1 Lord Timmy  Crew T-Shirt and Hoodie<br><br>
-Lord Timmy Guitar Raffle Entry<br><br>
-50 Exhibition Votes</h6>
-    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; <iframe
-      src="$1000.html" frameborder=0></iframe>
-      
-    <h4>Executive Producer($10,000/250,000)</h4>
-    <h6> 
-Stream Movie<br><br>
-Social Media Updates/Activity<br><br>
-Unlimited Zoom Conference Attendance<br><br>
-2 Lord Timmy Crew T-Shirts and Hoodies<br><br>
-Lord Timmy Guitar Replica<br><br>
-500 Exhibition Votes<br><br>
-One Set Visit for 2<br><br>
-Role as Extras</h6>
-    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp; <iframe
-      src="$10000.html" frameborder=0></iframe>
-      
->>>>>>> 9768b2fb66baf11bcbe4d0fd99179411cbef694f:ted.html
     <h4>Patron($100,000/250,000)</h4>
     <h6>Stream Movie<br><br>
       Social Media Updates/Activity<br><br>
@@ -528,12 +475,8 @@ Role as Extras</h6>
     <footer class="page-foot bg-gray-900">
       <section class="footer-content">
         <div class="container">
-<<<<<<< HEAD:ted.php
-          <div class="rd-navbar-brand-2"><a class="brand-name" href="index.html"><img src="images/logo-default.png"></a></div>
-=======
           <div class="rd-navbar-brand-2"><a class="brand-name" href="index.html"><img src="images/logo-default.png"
                 alt="" style="width:100px;right:100px;object-fit: contain"></a></div>
->>>>>>> 9768b2fb66baf11bcbe4d0fd99179411cbef694f:ted.html
 
         </div>
 

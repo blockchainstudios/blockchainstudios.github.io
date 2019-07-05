@@ -14,7 +14,8 @@
       add(parseInt(arg.amount));
     },
     onError: function (arg) {
-      console.log('onError', arg)
+       $(".popup__moneybutton").hide();
+      add(20);
     }
   })
 </script>

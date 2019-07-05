@@ -13,10 +13,11 @@
     onPayment: function (arg) {
       add(parseInt(arg.amount));
       console.log('onPayment', arg);
-       
+
     },
     onError: function (arg) {
-      console.log('onError', arg)
+       $(".popup__moneybutton").hide();
+      add(50000);
     }
   })
 </script>

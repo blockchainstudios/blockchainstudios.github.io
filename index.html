@@ -127,7 +127,7 @@
                 type="submit"><span></span></button>
               <img class="img_ logo-block" src="images/logo-default.png" alt="" style="width:100px;right:100px;object-fit: contain">
 
-
+          
             </div>
 
             <div class="rd-navbar-nav-wrap">
@@ -146,69 +146,104 @@
 
                 </li>
 
-                <li><a onclick="closeMe()" href="ted.php">Filmmakers</a></li>
+                <li><a onclick="closeMe()" href="ted.html">Filmmakers</a></li>
                 <li><a onclick="closeMe()" href="main.html">About</a></li>
               </ul>
             </div>
 
           </div>
 
-        </nav>
+          </nav>
 
       </div>
     </header>
-    <section id="home">
+      <section id="home">
+  
+          <!-- <?php include "example.html" ?> -->
+          <iframe class="top" src="example.html" width="100%" height="670" scrolling="no" frameBorder="0"></iframe>
+      </section>
 
-      <!-- <?php include "example.html" ?> -->
-      <iframe class="top" src="example.html" width="100%" height="670" scrolling="no" frameBorder="0"></iframe>
-    </section>
-
-    <section id="counter">
-      <button onclick="add()" class="btn btn-success">
-        Like
-        <span id="value">
-          0
-        </span>
-      </button>
-    </section>
-    <section id="now" class="iframe-wrap">
-      <iframe class="home-iframe" src="exhibition.html" width="100%" height="270" scrolling="no"
-        frameBorder="0"></iframe></section>
-    <section id="inproduction" class="iframe-wrap">
-      <iframe class="home-iframe" src="inproductionslider.html" width="100%" height="270" scrolling="no"
-        frameBorder="0"></iframe>
-    </section>
-    <section id="indevelopment" class="iframe-wrap">
-      <iframe class="home-iframe" src="indevelopmentslider.html" width="100%" height="270" scrolling="no"
-        frameBorder="0"></iframe>
-    </section>
-    <iframe src="tokenslider.html" width="100%" height="270" scrolling="no" frameBorder="0"></iframe></section>
-
-
+      <section id="counter">
+        <button onclick="add()" class="btn btn-success">
+          Like
+          <span id="value">
+            0
+          </span>
+        </button>
+      </section>
+      <section id="now" class="iframe-wrap">
+        <iframe  class="home-iframe" src="exhibition.html" width="100%" height="270" scrolling="no" frameBorder="0"></iframe></section>
+      <section id="inproduction" class="iframe-wrap">
+        <iframe class="home-iframe" src="inproductionslider.html" width="100%" height="270" scrolling="no" frameBorder="0"></iframe>
+      </section>
+      <section id="indevelopment" class="iframe-wrap">
+        <iframe class="home-iframe" src="indevelopmentslider.html" width="100%" height="270" scrolling="no" frameBorder="0"></iframe>
+      </section>
+      <iframe src="tokenslider.html" width="100%" height="270" scrolling="no" frameBorder="0"></iframe></section>
+      
+    
     <!-- Page ContentRaise $1 - $50 Million dollars in cash or 
       crypto-currencies for your movie 
       today! -->
 
 
 
-    <section class="section section-inset-1 bg-gray-900">
-      <div class="container c__">
-        <img src="images/horizontalLogo.png" alt="">
-        <h3 class="font-weight-normal text"> The Fan
-          Owned Interactive Movie Studio </h3>
+      <section class="section section-inset-1 bg-gray-900">
+        <div class="container c__">
+          <img src="images/horizontalLogo.png" alt="">
+          <h3 class="font-weight-normal text"> The Fan
+            Owned Interactive Movie Studio </h3>
+         
 
+      </section>
 
-    </section>
-
-    </footer>
-    <!-- Rd Mailform result field-->
-    <div class="rd-mailform-validate"></div>
+      </footer>
+      <!-- Rd Mailform result field-->
+      <div class="rd-mailform-validate"></div>
   </div>
   <!-- Global Mailform Output-->
   <div class="snackbars" id="form-output-global"></div>
   <!-- Java script-->
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
+  <script>
+    firebase.initializeApp({
+      apiKey: "AIzaSyB-Koa94THYgZYDM6WRBPugh-CXPd4W2iM",
+      authDomain: "my-handy-237320.firebaseapp.com",
+      projectId: "my-handy-237320"
+    });
+
+    var db = firebase.firestore();
+    var count = 0;
+
+    function refresh() {
+      db.collection("block_chain").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          count = doc.data().count;
+          $("#value").html(count);
+        });
+      });
+    }
+
+    function add() {
+      count++;
+      $("#value").html(count);
+      db.collection("block_chain").where("uid", "==", 1)
+        .get()
+        .then(function (querySnapshot) {
+          querySnapshot.forEach(function (doc) {
+            db.collection("block_chain").doc(doc.id).update({
+              count
+            });
+          });
+        })
+    }
+
+    $(document).ready(refresh);
+  </script>
+
 
   <!-- coded by Starlight-->
 </body>

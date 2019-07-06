@@ -1,0 +1,91 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<!-- center -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://api.moneybutton.com/moneybutton.js"></script>
+     
+	   <center> <h1>My Movies Actor Offer Letter </h1></center>
+    <iframe src="mikesagreement.pdf" width="100%" height="500px">
+		
+    </iframe>
+    <br>
+    <br>
+    <br>
+      <div class="txlink"><strong>Swiping the Moneybutton below constitutes your acceptance of above terms.</strong> 
+			  
+			  <div class="money-button" 
+				   data-to="16nmQkZapG6R9NyyQ8Y6pd9cj1s185HGLF" 
+				   data-amount="1200" 
+				   data-currency="USD" 
+				   data-label="Sign" 
+				   data-hide-amount="false" 
+				   data-client-identifier="066f434d69de9157a398c978054e9185" 
+				   data-button-id="1554147627294" 
+				   data-button-data="music"
+              	data-op-return="Dear Mr. Michael Placencia:
+I represent PRODUCER (‘‘Producer’’) in regard to the upcoming production ‘‘Lord Timmy & The Mystery of the Last Master’’ (‘‘Picture’’). My client would like to employ ACTOR (‘‘Artist’’) for a One (1) week (e.g., one (6) day week) shoot on or about the dates of July 1, 2019 and July 28, 2019.
+Artist would be playing the role of Inspector Rover. The shooting will take place in Santa Cruz, CA & Mt. Shasta, CA. Teodoro Rivera will direct.
+Fixed Compensation: Producer offers to pay a flat fee of 1 (one) Bitcoin(SV) and 5% of the U.S. Copyright for Artist’s services. Upon timely acceptance of this offer in writing, 5% of the Picture's Copyright (Case# 1- 7324849641) would become payable on a pay-or-play basis.
+Deferred Compensation: In addition to the Fixed Compensation set forth above, subject to the production and release of the Picture and subject to the performance of all material obligations of Artist hereunder, Artist shall be entitled to receive for Artist’s services the sum of Twelve Thousand Dollars ($6,000) which shall be deferred and paid pro rata with all similar first priority deferments. Artist’s deferment shall be defined on a favored nation’s basis with other cast members and computed as follows: An amount payable out of Producer’s gross receipts from the Picture after the investors in the Picture have recouped their entire investment per the offering, and after all loans and outstanding obligations for production expenses have been repaid.
+Grant of Rights : Producer shall have the worldwide right to use and to license the use of Artist’s name, sobriquet, photograph, likeness, voice and/or caricature and shall have the right to simulate Artist’s voice, signature and appearance by any means in and in connection with the Picture and the advertising, publicizing,
+exhibition, and/or other exploitation thereof in any manner and by any means and in connection with commercial advertising and publicity tie-ups.
+Producer shall own all results and proceeds of Artist’s services hereunder, including the copyrights thereof, and as such owner shall have the right (among all other rights of ownership): (i) to include such results and proceeds in the Picture and in advertising and publicity relating to the Picture, (ii) to reproduce such results and proceeds by any present or future means, (iii) to combine such results and proceeds with photographs and recordings made by others for use in the Picture, (iv) to exhibit and perform such results and proceeds in theaters, on the radio and television, and in or by any other present or future media, for profit and otherwise, and for commercial or non- commercial purposes and purposes of trade, and (v) to license and assign its rights to any other person or company. The results and proceeds of Artist’s services include any and all material, words, writings, ideas, ‘‘gags,’’ dialogue, melody and lyrics composed, submitted or interpolated by Artist in connection with the preparation or production
+July 6, 2019
+of the Picture. Artist hereby expressly waives and relinquishes any moral rights or ‘‘droit morale’’ in and to any material created by or contributed to the Picture by Artist including all of Artist’s performance.
+Producer shall have the exclusive right and license, but only in connection with Artist’s participation as INSPECTOR ROVER (Role) in the to use and to license the use of Artist’s name, sobriquet, photograph, likeness, caricature and/or signature (collectively referred to herein as ‘‘name and likeness’’) in and in connection with any merchandising and/or publishing undertakings
+Credit: Upon condition that Artist shall appear recognizably in the Picture as released, the Producer shall accord the Artist credit in connection with the Picture as follows:
+(a) On Screen: On screen on a separate card, in the main titles, after the title of the Picture,
+in third position, in a size of type no smaller than seventy‐five percent (75%) of the size of type used to display the title of the Picture, and in a size of type no smaller than the size of type used to accord an individual ‘‘directed by’’ credit to the director of the Picture;
+Additional Terms and Conditions: The parties will enter into a more formal agreement, which agreement shall incorporate the foregoing terms as well as other customary terms and conditions contained in comparable agreements, including customary representations and warranties, mutual indemnification, Artist’s waiver of injunctive and other equitable relief, full depiction release including merchandising rights, Producer’s right to assign rights, extensions for force majeure including any period in which a member of the principal cast and/or a director is unavailable, and application of California law. Please discuss this offer with your client. If your client is willing to accept this offer, please provide your Money Button Paymail to the Producer by July 5, 2019 . If I do not hear from you by that date, this offer will lapse. If the offer is accepted, unless and until such more formal Agreement is executed, this letter agreement, supplemented by the aforementioned customary terms and conditions, shall constitute the parties’ agreement.
+Providing your money button ID and accepting this payment constitutes your acceptance of these terms.
+
+" 
+				   data-type="buy"></div><br>
+              <div class="txlink"><strong>Receipt:</strong> <a href="https://whatsonchain.com/tx/{$tx}" target="_new"></a>   </div>
+          
+
+
+			
+        
+    
+   <br>
+    
+  <script>
+    (function($, w) {
+      "use strict";
+      // $().ready(function(){
+      $(".txlink").each(function(i, v) {
+        var $v = $(v);
+        var fname = "_txlink" + i;
+        var href = decodeURIComponent($v.find("a").prop("href"));
+        w[fname] = function(payment) {
+          $v.find("a")
+            .fadeOut().fadeIn().fadeOut().fadeIn()
+            .text("Click me to view the transaction reciept!")
+            .prop("href", href.replace(/[{][$]tx[}]/, payment.txid));
+          console.log(payment.txid);
+        };
+        $v.siblings(".money-button").attr('data-on-payment', fname);
+        console.log(i, $v, href);
+      });
+      // });
+    })(jQuery||$, window);
+
+  </script>
+  
+  <br>
+  
+ 
+
+  
+ </body>
+</html>
+
+ 

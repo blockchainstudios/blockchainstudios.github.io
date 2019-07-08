@@ -1,0 +1,77 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<!-- center -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://api.moneybutton.com/moneybutton.js"></script>
+     
+	   <center> <h1>MyMovies Reciept Validation </h1></center>
+    <iframe src="https://bico.media/cdd52c30d27bf6eab3ec8911e217efac70dcde8b7108f454e4680ddd8a3c75e4.jpg" width="100%" height="500px">
+		
+    </iframe>
+    <br>
+    <br>
+    <br>
+      <div class="txlink"><strong>Swiping the Moneybutton below constitutes your acceptance of above terms.</strong> 
+			  
+			  <div class="money-button" 
+				   data-to="16nmQkZapG6R9NyyQ8Y6pd9cj1s185HGLF" 
+				   data-amount="0.01" 
+				   data-currency="USD" 
+				   data-label="Sign" 
+				   data-hide-amount="false" 
+				   data-client-identifier="066f434d69de9157a398c978054e9185" 
+				   data-button-id="1554147627294" 
+				   data-button-data="music"
+              	data-op-return="  
+              	I am submitting this 'Declaration of In-Kind Purchase of Copyright % in the amount of $141' on behalf of Ted Rivera.  He has released these items, valued in BSV High Price on the day of purchase, in accordance with the submitted budget to the ownership of the collective Purchasers of the Lord Timmy & The Mystery of the Last Master Copyright - Mohana Nukala, Executive Producer, MyMovies.us by Swipe
+
+" 
+				   data-type="buy"></div><br>
+              <div class="txlink"><strong>Receipt:</strong> <a href="https://whatsonchain.com/tx/{$tx}" target="_new"></a>   </div>
+          
+
+
+			
+        
+    
+   <br>
+    
+  <script>
+    (function($, w) {
+      "use strict";
+      // $().ready(function(){
+      $(".txlink").each(function(i, v) {
+        var $v = $(v);
+        var fname = "_txlink" + i;
+        var href = decodeURIComponent($v.find("a").prop("href"));
+        w[fname] = function(payment) {
+          $v.find("a")
+            .fadeOut().fadeIn().fadeOut().fadeIn()
+            .text("Click me to view the transaction reciept!")
+            .prop("href", href.replace(/[{][$]tx[}]/, payment.txid));
+          console.log(payment.txid);
+        };
+        $v.siblings(".money-button").attr('data-on-payment', fname);
+        console.log(i, $v, href);
+      });
+      // });
+    })(jQuery||$, window);
+
+  </script>
+  
+  <br>
+  
+ 
+
+  
+ </body>
+</html>
+
+ 

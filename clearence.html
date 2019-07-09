@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MyMovies</title>
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://metaflix.icu/css/style.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://vjs.zencdn.net/7.1.0/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/7.1.0/video.min.js"></script>
+  <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+
+  <style>
+    /* Paywall css The CSS you'll need in your website */
+    #unlockable {
+      display: none;
+      opacity: 0;
+      transition: opacity 5s;
+    }
+
+    #unlockable.unlocked {
+      display: inline;
+      opacity: 1;
+    }
+  </style>
+  <script>
+    /* Paywall javascript The Javascript you'll need in your website */
+    function handleSuccessfulPayment(payment) {
+      unlockContent();
+    }
+
+    function handleFailedPayment(error) {
+      alert("Sorry, the payment did not process correctly.")
+    }
+
+    function unlockContent() {
+      document.getElementById("unlockable").classList.toggle("unlocked");
+    }
+  </script>
+
+  <script>
+    /* pop up share script */
+    $(window).load(function () {
+      $(".trigger_popup_fricc").click(function () {
+        $('.hover_bkgr_fricc').show();
+      });
+      $('.hover_bkgr_fricc').click(function () {
+        $('.hover_bkgr_fricc').hide();
+      });
+      $('.popupCloseButton').click(function () {
+        $('.hover_bkgr_fricc').hide();
+      });
+    });
+  </script>
+
+</head>
+
+<body style="width:100%;background:#000000;color:white;text-align: center">
+   <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-device-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-stick-up-offset="100px">
+            <!--(data-layout='rd-navbar-fixed',data-sm-layout='rd-navbar-fullwidth', data-lg-layout=rd_navbar_data_ajuster )-->
+            <div class="rd-navbar-top-panel bg-accent">
+              <div class="rd-navbar-inner">
+                <button class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".list-inline" type="submit"><span></span></button><a class="fa-envelope" href="mailto:#">info@demolink.org</a><a class="fa-mobile-phone preffix-2" href="callto:#">1-800-1234-567</a>
+                <ul class="list-inline pull-right">
+                  <li><a class="fa-facebook" href="#"></a></li>
+                  <li><a class="fa-twitter" href="#"></a></li>
+                  <li><a class="fa-pinterest-p" href="#"></a></li>
+                  <li><a class="fa-vimeo" href="#"></a></li>
+                  <li><a class="fa-google-plus" href="#"></a></li>
+                  <li><a class="fa-rss" href="#"></a></li>
+                  <li class="text-left"><a class="fa-envelope" href="mailto:#">info@demolink.org</a></li>
+                  <li class="text-left"><a class="fa-mobile-phone" href="callto:#">1-800-1234-567</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="rd-navbar-inner">
+              <!-- RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!-- RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap" type="submit"><span></span></button>
+                <!-- RD Navbar Brand-->
+                <div class="rd-navbar-brand">
+					<a class="brand-name" href="index.html">
+						<img src="images/logo-default.png" alt="" style = "padding-right:50px;padding-left:50px;object-fit:contain">
+						</a></div>
+              </div>
+              
+              <div class="rd-navbar-nav-wrap">
+                <!-- RD Navbar Search-->
+                <div class="rd-navbar-search">
+                  <form class="rd-search rd-navbar-search-form" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
+                    <label class="rd-navbar-search-form-input">
+                      <input type="text" name="s" placeholder="Search.." autocomplete="off">
+                    </label>
+                    <button class="rd-navbar-search-form-submit fa-shopping-cart" type="submit"></button>
+                  </form>
+                  <div class="rd-search-results-live rd-navbar-live-search-results" id="rd-search-results-live"></div>
+                  <!-- RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                  <li class="active"><a onclick="closeMe()" href="./main.html">Home</a></li>
+                  <li style='background: green;color:white;border-radius: 4px;'><a href="ted.html">Funding</a></li>
+                  <li><a onclick="closeMe()" href="javascript:void(0);">Sign Up</a>
+                   <!-- <ul class="rd-navbar-dropdown"> 
+                      <li><a href="movie-details.html">Movie Details</a></li>
+                    </ul>-->
+                  </li>
+                  <li><a onclick="closeMe()" href="index.html#inproduction">In Production</a>
+                 <!--    <ul class="rd-navbar-dropdown">
+                      <li><a href="blog_default.html">Default Blog</a></li>
+                      <li><a href="blog_columns_2.html">2 Columns Blog</a></li>
+                      <li><a href="blog_columns_3.html">3 Columns Blog</a></li>
+                      <li><a href="blog_archive.html">Blog Archive</a></li>
+                      <li><a href="timeline.html">Timeline</a></li>
+                      <li><a href="blog_post.html">Post page</a></li>
+                      <li><a href="left_sidebar.html">Blog with Left Sidebar</a></li>
+                      <li><a href="right_sidebar.html">Blog with Right Sidebar</a></li>
+                      <li><a href="no_sidebar.html">Blog without Sidebar</a></li>
+                    </ul>
+                  </li>-->
+                  <!-- <li><a onclick="closeMe()" href="index.html#indevelopment">In Development</a> -->
+                    <!-- RD Navbar Megamenu-->
+                   <!--   <ul class="rd-navbar-megamenu">
+                      <li>
+                        <p>Elements</p>
+                        <ul>
+                          <li><a href="tabs-accordion.html">Tabs & Accordions</a></li>
+                          <li><a href="typography.html">Typography</a></li>
+                          <li><a href="forms.html">Forms</a></li>
+                          <li><a href="buttons.html">Buttons</a></li>
+                          <li><a href="grid.html">Grid</a></li>
+                          <li><a href="icons.html">Icons</a></li>
+                          <li><a href="tables.html">Tables</a></li>
+                          <li><a href="progress-bars.html">Progress bars</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>Pages 1</p>
+                        <ul>
+                          <li><a href="about.html">About Us</a></li>
+                          <li><a href="our-team.html">Our Team</a></li>
+                          <li><a href="team-member.html">Team member profile</a></li>
+                          <li><a href="contact_us_2.html">Contact Us 2</a></li>
+                          <li><a href="pricing.html">Pricing</a></li>
+                          <li><a href="services.html">Services page</a></li>
+                          <li><a href="clients.html">Client Page</a></li>
+                          <li><a href="faq.html">FAQ Page</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>Pages 2</p>
+                        <ul>
+                          <li><a href="404.html">404</a></li>
+                          <li><a href="coming-soon.html">Coming soon</a></li>
+                          <li><a href="login.html">Login page</a></li>
+                          <li><a href="maintenance.html">Maintenance page</a></li>
+                          <li><a href="register.html">Register page</a></li>
+                          <li><a href="search-results.html">Search results page</a></li>
+                          <li><a href="terms.html">Terms of Use</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p>Gallery</p>
+                        <ul>
+                          <li><a href="grid-gallery.html">Grid Gallery</a></li>
+                          <li><a href="no-padding-grid.html">Grid Without Padding Gallery</a></li>
+                          <li><a href="masonry-grid.html">Masonry Gallery</a></li>
+                          <li><a href="cobbles-grid.html">Cobbles Gallery</a></li>
+                        </ul>
+                      </li>
+                    </ul>-->
+                  </li>
+                  <li><a onclick="closeMe()" href="#">Distribution</a>
+                    <!-- <ul class="rd-navbar-dropdown">
+                      <li><a href="shop-catalog.html">Product catalog</a></li>
+                      <li><a href="shop-product.html">Single Movie</a></li>
+                      <li><a href="shop-cart.html">Shopping cart</a></li>
+                      <li><a href="shop-checkout.html">Checkout</a></li>
+                    </ul>-->
+                  </li>
+                  <li><a onclick="closeMe()" href="contact_us.html">Resources</a></li>
+                  <li><a onclick="closeMe()" href="ted.html">Filmmakers</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+          </nav>
+
+  <div class="container french">
+    <div class="row justify-content-center">
+		<br>
+		<br>
+		<br>
+      <h1 class="sectionTitle">Rights and Clearences</h1>
+    </div>
+    <div class="row justify-content-center text-center">
+      <h2> For purchasers eyes only </h2>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      </div>
+    <br>
+    <div class="examples">
+      <!-- Money Button -->
+      <div class="row justify-content-center">
+        <div class='money-button' data-outputs='[
+			 
+			{
+			  "userId": "2677",
+			  "amount": "0.01",
+			  "currency": "USD"
+			}
+          
+        ]' data-label="Unlock" data-client-identifier="066f434d69de9157a398c978054e9185"
+          data-button-id="1ANpLsyPZj5wp8sr3Dt4rdpYHPvsNQLegu" data-button-data="{}" data-type="buy"
+          data-on-payment="handleSuccessfulPayment" data-on-error="handleFailedPayment" data-dev-mode="false"></div>
+      </div>
+      <div class="row justify-content-center">
+        </div>
+      <!-- Hidden content -->
+      <div id="unlockable">
+        <div style="display: block;background-color: #000000;">
+         
+            <iframe style = "width:75%; height:2200px" height="2200px" src="https://bico.media/eae614c73304061506d33ba1e4a9d48831ef11fdfc1ae1b13801a87fe0c949d9.pdf"></iframe>
+         </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Footer-->
+  <footer class="page-foot bg-gray-900">
+    <section class="footer-content">
+      <div class="container">
+        <div class="rd-navbar-brand-2"><a class="brand-name" href="index.html"><img src="images/logo-default.png"
+              alt="" style = "width:200px; object-fit: contain"></a></div>
+
+      </div>
+    </section>
+    <section class="footer-copyright-1 copyright">
+      <div class="container">
+        <!-- Rights-->
+        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All
+            Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none" /><a href="terms.html">Terms of
+            Use.</a><span> Design&nbsp;by&nbsp;<a href="https://zemez.io/">MyMovies.Us</a></span></p>
+      </div>
+    </section>
+  </footer>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://bico.media/b://9949020cfeae6551830978705b63152efb282adc3a6e79bbb6af13ba36d20900.js"></script>
+
+
+  <!-- Money Button script -->
+  <script src="https://www.moneybutton.com/moneybutton.js"></script>
+
+</body>
+<script>
+  function closeMe() {
+    $(".rd-navbar-toggle").trigger('click');
+  }
+</script>
+
+</html>

@@ -1,0 +1,84 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<!-- center -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://api.moneybutton.com/moneybutton.js"></script>
+     
+	   <center> <h1>My Movies Actor Offer Letter - Josh</h1></center>
+    <iframe src="https://bico.media/5c655eee28938835d292dbd917b685700747de6d9aa763e641eba04d609b1389" width="100%" height="500px">
+		
+    </iframe>
+    <br>
+    <br>
+    <br>
+      <div class="txlink"><strong>Swiping the Moneybutton below constitutes your acceptance of above terms.</strong> 
+			  
+			  <div class="money-button" 
+				   data-to="1EyBb5PpeZRcNpz3WYsav96FhaAS7f4oRd" 
+				   data-amount="1" 
+				   data-currency="USD" 
+				   data-label="Sign" 
+				   data-hide-amount="false" 
+				   data-client-identifier="066f434d69de9157a398c978054e9185" 
+				   data-button-id="1554147627294" 
+				   data-button-data="music"
+              	data-op-return="I am the PRODUCER (‘‘Producer’’) in regard to the upcoming production ‘‘Lord Timmy & The
+Mystery of the Last Master’’ (‘‘Picture’’). I would like to employ Joshua Malekos (‘‘Artist’’) for a 8
+day shoot.
+Artist would be playing the role of Dr. Craig Wright. The shooting will take place in Santa Cruz,
+CA & Los Gatos. Teodoro Rivera will direct.
+Fixed Compensation: Producer offers to pay deferred a day rate of $100 for 4 days in Bitcoin
+BSV and $100 for 4 days in cash plus 5% of the U.S. Copyright for Lord Timmy & the Mystery of
+the Last Master for Artist’s services. In addition, Execute Producer offers 1000 shares of
+MyMovies company. Upon acceptance of this offer, via Money Button swipe, 5% of the Picture's
+Copyright (# 3-962-455) would become payable on a pay-or-play basis
+" 
+				   data-type="buy"></div><br>
+              <div class="txlink"><strong>Receipt:</strong> <a href="https://whatsonchain.com/tx/{$tx}" target="_new"></a>   </div>
+          
+
+
+			
+        
+    
+   <br>
+    
+  <script>
+    (function($, w) {
+      "use strict";
+      // $().ready(function(){
+      $(".txlink").each(function(i, v) {
+        var $v = $(v);
+        var fname = "_txlink" + i;
+        var href = decodeURIComponent($v.find("a").prop("href"));
+        w[fname] = function(payment) {
+          $v.find("a")
+            .fadeOut().fadeIn().fadeOut().fadeIn()
+            .text("Click me to view the transaction reciept!")
+            .prop("href", href.replace(/[{][$]tx[}]/, payment.txid));
+          console.log(payment.txid);
+        };
+        $v.siblings(".money-button").attr('data-on-payment', fname);
+        console.log(i, $v, href);
+      });
+      // });
+    })(jQuery||$, window);
+
+  </script>
+  
+  <br>
+  
+ 
+
+  
+ </body>
+</html>
+
+ 

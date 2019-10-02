@@ -1,0 +1,83 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<!-- center -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://api.moneybutton.com/moneybutton.js"></script>
+     
+	   <center> <h1>My Movies Actor Offer Letter - Tiffany</h1></center>
+    <iframe src="https://bico.media/fb0abfcaa5d3a1796bd28e823242e89b562124aeeab047ad53dce26c1be1485e" width="100%" height="500px">
+		
+    </iframe>
+    <br>
+    <br>
+    <br>
+      <div class="txlink"><strong>Swiping the Moneybutton below constitutes your acceptance of above terms.</strong> 
+			  
+			  <div class="money-button" 
+				   data-to="1EtVFsZ3HdPUzvyX7DT2VTknhr8kd6cWb5" 
+				   data-amount="170" 
+				   data-currency="USD" 
+				   data-label="Sign" 
+				   data-hide-amount="false" 
+				   data-client-identifier="066f434d69de9157a398c978054e9185" 
+				   data-button-id="1554147627294" 
+				   data-button-data="music"
+              	data-op-return="I am the PRODUCER (‘‘Producer’’) in regard to the upcoming production ‘‘Lord Timmy & The Mystery of the Last Master’’ (‘‘Picture’’). I would like to employ Tiffany Phan (‘‘Artist’’) for a two (2) days shoot on or about the dates of July 11, 2019 and July 19, 2019. 
+
+Artist would be playing the role of Craig Wright’s Assistant. The shooting will take place in Santa Cruz, CA & Los Gatos. Teodoro Rivera will direct.
+
+Fixed Compensation: Producer offers to pay a flat fee of $170 in Bitcoin BSV plus 2% of the U.S. Copyright for Lord Timmy & the Mystery of the Last Master for Artist’s services. Upon acceptance of this offer, via Money Button swipe, a $170 Per Diem and Wardrobe/Make-Up Rental in BSV plus 2% of the Picture's Copyright (# 3-962-455) would become payable on a pay-or-play basis. 
+
+AGREED TO AND ACCEPTED: Money Button ID# 1EtVFsZ3HdPUzvyX7DT2VTknhr8kd6cWb5
+Tiffany Phan - ACTOR
+
+" 
+				   data-type="buy"></div><br>
+              <div class="txlink"><strong>Receipt:</strong> <a href="https://whatsonchain.com/tx/{$tx}" target="_new"></a>   </div>
+          
+
+
+			
+        
+    
+   <br>
+    
+  <script>
+    (function($, w) {
+      "use strict";
+      // $().ready(function(){
+      $(".txlink").each(function(i, v) {
+        var $v = $(v);
+        var fname = "_txlink" + i;
+        var href = decodeURIComponent($v.find("a").prop("href"));
+        w[fname] = function(payment) {
+          $v.find("a")
+            .fadeOut().fadeIn().fadeOut().fadeIn()
+            .text("Click me to view the transaction reciept!")
+            .prop("href", href.replace(/[{][$]tx[}]/, payment.txid));
+          console.log(payment.txid);
+        };
+        $v.siblings(".money-button").attr('data-on-payment', fname);
+        console.log(i, $v, href);
+      });
+      // });
+    })(jQuery||$, window);
+
+  </script>
+  
+  <br>
+  
+ 
+
+  
+ </body>
+</html>
+
+ 
